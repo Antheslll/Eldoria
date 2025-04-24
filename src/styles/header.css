@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "pirata-one";
+  src: url("/assets/fonts/PirataOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: "eb-garamond-regular";
+  src: url("/assets/fonts/EB_Garamond/static/EBGaramond-Regular.ttf");
+}
+
+h1 {
+  font-family: "pirata-one";
+}
+
+h3 {
+  font-family: "eb-garamond-reguler";
+}
+
+.font-pirata {
+  font-family: "pirata-one";
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.3s ease-in-out forwards;
+}

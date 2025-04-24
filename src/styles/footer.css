@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "spectral-regular";
+  src: url("/assets/fonts/Spectral-Regular.ttf");
+}
+
+@font-face {
+  font-family: "eb-garamond-regular";
+  src: url("/assets/fonts/EB_Garamond/static/EBGaramond-Regular.ttf");
+}
+
+.footer-background {
+  background: linear-gradient(to top, #0a0c14 0%, #0b0d30 100%);
+}
+
+h3 {
+  font-family: "spectral-regular";
+}
+
+h5 {
+  font-family: "eb-garamond-regular";
+}
