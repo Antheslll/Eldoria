@@ -2,9 +2,9 @@ const BorderBottom = () => {
   return (
     <div className="w-full flex justify-center z-10">
       <div className="w-[100px] h-[50px]  grid grid-cols-[25px_50px_25px]">
+        <Diamond width={5} height={5} />
         <Diamond width={10} height={10} />
-        <Diamond width={20} height={20} />
-        <Diamond width={10} height={10} />
+        <Diamond width={5} height={5} />
       </div>
     </div>
   );

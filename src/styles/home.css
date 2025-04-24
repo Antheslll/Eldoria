@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "pirata-one";
+  src: url("/assets/fonts/PirataOne-Regular.ttf");
+}
+
+.font-pirata {
+  font-family: "pirata-one";
+}
+
+.clip-custom {
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+
+.home-background {
+  background: linear-gradient(to bottom, #0a0c14 0%, #0b0d30 100%);
+}
+
+.slide-clip-custom {
+  clip-path: polygon(30% 0%, 100% 0%, 70% 100%, 0% 100%);
+}
+
+.slide-clip-custom-hover {
+  clip-path: polygon(17.5% 0%, 100% 0%, 82% 100%, 0% 100%);
+}
+
+.slide-clip-custom-non-hover {
+  clip-path: polygon(44% 0%, 100% 0%, 55% 100%, 0% 100%);
+}
+
+.radial-gradient {
+  background: radial-gradient(
+    circle,
+    rgba(102, 102, 102, 0.5) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
+.highlights-text-background {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 65%,
+    rgba(102, 102, 102, 0.5) 82%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.highlight-x-hover {
+  transition: margin-left 1s ease, width 1s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.fade-out {
+  animation: fadeOut 1s ease-in-out forwards;
+}
