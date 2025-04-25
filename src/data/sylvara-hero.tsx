@@ -1,5 +1,5 @@
-export const sylvara = {
-  aerenLyrwind: {
+export const sylvaraHero = [
+  {
     name: "Aeren Lyrwind",
     surname: "Sentinel of the Verdant Gate",
     level: 42,
@@ -25,7 +25,7 @@ export const sylvara = {
     characterPreview:
       "/assets/character-page-assets/character-assets/aeren-lyrwind/character-preview.png",
     weaponImg:
-      "/assets/character-page-assets/character-assets/aeren-lyrwind/weapons.png",
+      "/assets/character-page-assets/character-assets/aeren-lyrwind/weapon.png",
     skill1Icon:
       "/assets/character-page-assets/character-assets/aeren-lyrwind/skill-1.png",
     skill2Icon:
@@ -41,7 +41,7 @@ export const sylvara = {
     background:
       "/assets/character-page-assets/character-assets/aeren-lyrwind/background.png",
   },
-  naeraElynthar: {
+  {
     name: "Naera Elynthar",
     surname: "Verdant Seer",
     level: 47,
@@ -66,7 +66,7 @@ export const sylvara = {
     characterPreview:
       "/assets/character-page-assets/character-assets/naera-elynthar/character-preview.png",
     weaponImg:
-      "/assets/character-page-assets/character-assets/naera-elynthar/weapons.png",
+      "/assets/character-page-assets/character-assets/naera-elynthar/weapon.png",
     skill1Icon:
       "/assets/character-page-assets/character-assets/naera-elynthar/skill-1.png",
     skill2Icon:
@@ -82,7 +82,7 @@ export const sylvara = {
     background:
       "/assets/character-page-assets/character-assets/naera-elynthar/background.png",
   },
-  fayenWoodguard: {
+  {
     name: "Fayen Woodguard",
     surname: "Ironbark Sentinel",
     level: 43,
@@ -107,7 +107,7 @@ export const sylvara = {
     characterPreview:
       "/assets/character-page-assets/character-assets/fayen-woodguard/character-preview.png",
     weaponImg:
-      "/assets/character-page-assets/character-assets/fayen-woodguard/weapons.png",
+      "/assets/character-page-assets/character-assets/fayen-woodguard/weapon.png",
     skill1Icon:
       "/assets/character-page-assets/character-assets/fayen-woodguard/skill-1.png",
     skill2Icon:
@@ -123,7 +123,7 @@ export const sylvara = {
     background:
       "/assets/character-page-assets/character-assets/fayen-woodguard/background.png",
   },
-  verrisShadeleaf: {
+  {
     name: "Verris Shadeleaf",
     surname: "Phantom of the Deep Grove",
     level: 45,
@@ -148,7 +148,7 @@ export const sylvara = {
     characterPreview:
       "/assets/character-page-assets/character-assets/verris-shadeleaf/character-preview.png",
     weaponImg:
-      "/assets/character-page-assets/character-assets/verris-shadeleaf/weapons.png",
+      "/assets/character-page-assets/character-assets/verris-shadeleaf/weapon.png",
     skill1Icon:
       "/assets/character-page-assets/character-assets/verris-shadeleaf/skill-1.png",
     skill2Icon:
@@ -164,7 +164,7 @@ export const sylvara = {
     background:
       "/assets/character-page-assets/character-assets/verris-shadeleaf/background.png",
   },
-  orinThornlance: {
+  {
     name: "Orin Thornlance",
     surname: "Thornborn Vanguard",
     level: 44,
@@ -189,7 +189,7 @@ export const sylvara = {
     characterPreview:
       "/assets/character-page-assets/character-assets/orin-thornlance/character-preview.png",
     weaponImg:
-      "/assets/character-page-assets/character-assets/orin-thornlance/weapons.png",
+      "/assets/character-page-assets/character-assets/orin-thornlance/weapon.png",
     skill1Icon:
       "/assets/character-page-assets/character-assets/orin-thornlance/skill-1.png",
     skill2Icon:
@@ -205,4 +205,4 @@ export const sylvara = {
     background:
       "/assets/character-page-assets/character-assets/orin-thornlance/background.png",
   },
-};
+];

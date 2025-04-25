@@ -41,7 +41,6 @@ const Header = ({ page }: HeaderProps) => {
           navKey3="story"
           backgroundImage={`/assets/world-page-assets/hero-section-assets/background-image.png`}
         />
-        ;
       </header>
     );
   } else if (page === "/characterpage") {
@@ -61,7 +60,6 @@ const Header = ({ page }: HeaderProps) => {
           navKey3="story"
           backgroundImage={`/assets/character-page-assets/hero-section-assets/background-image.png`}
         />
-        ;
       </header>
     );
   }

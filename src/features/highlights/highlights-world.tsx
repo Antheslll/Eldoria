@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 interface HighlightWorldProps {
   isHover: string;
   setIsHover: (value: string) => void;
@@ -10,7 +12,8 @@ const HighlightWorld = ({
   hoverGrab,
 }: HighlightWorldProps) => {
   return (
-    <div
+    <Link
+      to="/worldpage"
       className={` ${
         isHover === "world"
           ? "highlight-x-hover w-[60%] slide-clip-custom-hover"
@@ -73,7 +76,7 @@ const HighlightWorld = ({
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

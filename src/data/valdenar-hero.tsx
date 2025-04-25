@@ -1,5 +1,5 @@
-export const valdenarhero = {
-  kaelThorneblade: {
+export const valdenarHero = [
+  {
     name: "Kael Thorneblade",
     surname: "Inferno Guardian",
     level: 50,
@@ -24,7 +24,7 @@ export const valdenarhero = {
     characterPreview:
       "/assets/character-page-assets/character-assets/kael-Thorneblade-assets/character-preview.png",
     weaponImg:
-      "/assets/character-page-assets/character-assets/kael-Thorneblade-assets/weapons.png",
+      "/assets/character-page-assets/character-assets/kael-Thorneblade-assets/weapon.png",
     skill1Icon:
       "/assets/character-page-assets/character-assets/kael-Thorneblade-assets/skill-1.png",
     skill2Icon:
@@ -40,7 +40,7 @@ export const valdenarhero = {
     background:
       "/assets/character-page-assets/character-assets/kael-Thorneblade-assets/background.png",
   },
-  serenFletchwynd: {
+  {
     name: "Seren Fletchwynd",
     surname: "Blaze Sentinel",
     level: 44,
@@ -66,7 +66,7 @@ export const valdenarhero = {
     characterPreview:
       "/assets/character-page-assets/character-assets/seren-fletchwynd/character-preview.png",
     weaponImg:
-      "/assets/character-page-assets/character-assets/seren-fletchwynd/weapons.png",
+      "/assets/character-page-assets/character-assets/seren-fletchwynd/weapon.png",
     skill1Icon:
       "/assets/character-page-assets/character-assets/seren-fletchwynd/skill-1.png",
     skill2Icon:
@@ -82,7 +82,7 @@ export const valdenarhero = {
     background:
       "/assets/character-page-assets/character-assets/seren-fletchwynd/background.png",
   },
-  velkaCindergaze: {
+  {
     name: "Velka Cindergaze",
     surname: "Lightseer",
     level: 48,
@@ -108,7 +108,7 @@ export const valdenarhero = {
     characterPreview:
       "/assets/character-page-assets/character-assets/velka-cindergaze/character-preview.png",
     weaponImg:
-      "/assets/character-page-assets/character-assets/velka-cindergaze/weapons.png",
+      "/assets/character-page-assets/character-assets/velka-cindergaze/weapon.png",
     skill1Icon:
       "/assets/character-page-assets/character-assets/velka-cindergaze/skill-1.png",
     skill2Icon:
@@ -124,7 +124,7 @@ export const valdenarhero = {
     background:
       "/assets/character-page-assets/character-assets/velka-cindergaze/background.png",
   },
-  ravikFlameveil: {
+  {
     name: "Ravik Flameveil",
     surname: "Silent Blaze",
     level: 46,
@@ -141,31 +141,31 @@ export const valdenarhero = {
     color: "#F5DEB3",
     //mulai asset image
     cardImg:
-      "/assets/character-page-assets/character-assets/ravik-flameiveil/card.png",
+      "/assets/character-page-assets/character-assets/ravik-flameveil/card.png",
     cardImgHover:
-      "/assets/character-page-assets/character-assets/ravik-flameiveil/card-hover.png",
+      "/assets/character-page-assets/character-assets/ravik-flameveil/card-hover.png",
     cardTextImg:
-      "/assets/character-page-assets/character-assets/ravik-flameiveil/card-text.png",
+      "/assets/character-page-assets/character-assets/ravik-flameveil/card-text.png",
     characterPreview:
-      "/assets/character-page-assets/character-assets/ravik-flameiveil/character-preview.png",
+      "/assets/character-page-assets/character-assets/ravik-flameveil/character-preview.png",
     weaponImg:
-      "/assets/character-page-assets/character-assets/ravik-flameiveil/weapons.png",
+      "/assets/character-page-assets/character-assets/ravik-flameveil/weapon.png",
     skill1Icon:
-      "/assets/character-page-assets/character-assets/ravik-flameiveil/skill-1.png",
+      "/assets/character-page-assets/character-assets/ravik-flameveil/skill-1.png",
     skill2Icon:
-      "/assets/character-page-assets/character-assets/ravik-flameiveil/skill-2.png",
+      "/assets/character-page-assets/character-assets/ravik-flameveil/skill-2.png",
     skill3Icon:
-      "/assets/character-page-assets/character-assets/ravik-flameiveil/skill-3.png",
+      "/assets/character-page-assets/character-assets/ravik-flameveil/skill-3.png",
     skill1preview:
-      "/assets/character-page-assets/character-assets/ravik-flameiveil/skill-1-preview.png",
+      "/assets/character-page-assets/character-assets/ravik-flameveil/skill-1-preview.png",
     skill2preview:
-      "/assets/character-page-assets/character-assets/ravik-flameiveil/skill-2-preview.png",
+      "/assets/character-page-assets/character-assets/ravik-flameveil/skill-2-preview.png",
     skill3preview:
-      "/assets/character-page-assets/character-assets/ravik-flameiveil/skill-3-preview.png",
+      "/assets/character-page-assets/character-assets/ravik-flameveil/skill-3-preview.png",
     background:
-      "/assets/character-page-assets/character-assets/ravik-flameiveil/background.png",
+      "/assets/character-page-assets/character-assets/ravik-flameveil/background.png",
   },
-  doranAshpike: {
+  {
     name: "Doran Ashpike",
     surname: "Radiant Impaler",
     level: 45,
@@ -190,7 +190,7 @@ export const valdenarhero = {
     characterPreview:
       "/assets/character-page-assets/character-assets/doran-asphike/character-preview.png",
     weaponImg:
-      "/assets/character-page-assets/character-assets/doran-asphike/weapons.png",
+      "/assets/character-page-assets/character-assets/doran-asphike/weapon.png",
     skill1Icon:
       "/assets/character-page-assets/character-assets/doran-asphike/skill-1.png",
     skill2Icon:
@@ -206,4 +206,4 @@ export const valdenarhero = {
     background:
       "/assets/character-page-assets/character-assets/doran-asphike/background.png",
   },
-};
+];

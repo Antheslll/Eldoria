@@ -1,5 +1,5 @@
-export const dravakhor = {
-  grahnDuskstone: {
+export const dravakhorHero = [
+  {
     name: "Grahn Duskstone",
     surname: "Warden of the Abyss",
     level: 49,
@@ -24,7 +24,7 @@ export const dravakhor = {
     characterPreview:
       "/assets/character-page-assets/character-assets/grahn-duskstone/character-preview.png",
     weaponImg:
-      "/assets/character-page-assets/character-assets/grahn-duskstone/weapons.png",
+      "/assets/character-page-assets/character-assets/grahn-duskstone/weapon.png",
     skill1Icon:
       "/assets/character-page-assets/character-assets/grahn-duskstone/skill-1.png",
     skill2Icon:
@@ -40,7 +40,7 @@ export const dravakhor = {
     background:
       "/assets/character-page-assets/character-assets/grahn-duskstone/background.png",
   },
-  kelraVoidmark: {
+  {
     name: "Kelra Voidmark",
     surname: "The Forbidden Oracle",
     level: 50,
@@ -65,7 +65,7 @@ export const dravakhor = {
     characterPreview:
       "/assets/character-page-assets/character-assets/kelra-voidmark/character-preview.png",
     weaponImg:
-      "/assets/character-page-assets/character-assets/kelra-voidmark/weapons.png",
+      "/assets/character-page-assets/character-assets/kelra-voidmark/weapon.png",
     skill1Icon:
       "/assets/character-page-assets/character-assets/kelra-voidmark/skill-1.png",
     skill2Icon:
@@ -81,7 +81,7 @@ export const dravakhor = {
     background:
       "/assets/character-page-assets/character-assets/kelra-voidmark/background.png",
   },
-  zirkBlackfang: {
+  {
     name: "Zirk Blackfang",
     surname: "Whisper of the Caverns",
     level: 47,
@@ -106,7 +106,7 @@ export const dravakhor = {
     characterPreview:
       "/assets/character-page-assets/character-assets/zirk-blackfang/character-preview.png",
     weaponImg:
-      "/assets/character-page-assets/character-assets/zirk-blackfang/weapons.png",
+      "/assets/character-page-assets/character-assets/zirk-blackfang/weapon.png",
     skill1Icon:
       "/assets/character-page-assets/character-assets/zirk-blackfang/skill-1.png",
     skill2Icon:
@@ -122,7 +122,7 @@ export const dravakhor = {
     background:
       "/assets/character-page-assets/character-assets/zirk-blackfang/background.png",
   },
-  drulStonepierce: {
+  {
     name: "Drul Stonepierce",
     surname: "Obsidian Vanguard",
     level: 46,
@@ -147,7 +147,7 @@ export const dravakhor = {
     characterPreview:
       "/assets/character-page-assets/character-assets/drul-stonepierce/character-preview.png",
     weaponImg:
-      "/assets/character-page-assets/character-assets/drul-stonepierce/weapons.png",
+      "/assets/character-page-assets/character-assets/drul-stonepierce/weapon.png",
     skill1Icon:
       "/assets/character-page-assets/character-assets/drul-stonepierce/skill-1.png",
     skill2Icon:
@@ -163,7 +163,7 @@ export const dravakhor = {
     background:
       "/assets/character-page-assets/character-assets/drul-stonepierce/background.png",
   },
-  murahShadesight: {
+  {
     name: "Murah Shadesight",
     surname: "Night’s Eye",
     level: 43,
@@ -188,7 +188,7 @@ export const dravakhor = {
     characterPreview:
       "/assets/character-page-assets/character-assets/murah-shadesight/character-preview.png",
     weaponImg:
-      "/assets/character-page-assets/character-assets/murah-shadesight/weapons.png",
+      "/assets/character-page-assets/character-assets/murah-shadesight/weapon.png",
     skill1Icon:
       "/assets/character-page-assets/character-assets/murah-shadesight/skill-1.png",
     skill2Icon:
@@ -204,4 +204,4 @@ export const dravakhor = {
     background:
       "/assets/character-page-assets/character-assets/murah-shadesight/background.png",
   },
-};
+];

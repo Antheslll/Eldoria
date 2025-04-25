@@ -1,5 +1,5 @@
-export const nirvalis = {
-  ilyraGlacias: {
+export const nirvalisHero = [
+  {
     name: "Ilyra Glacias",
     surname: "Lady of the Eternal Frost",
     level: 49,
@@ -24,7 +24,7 @@ export const nirvalis = {
     characterPreview:
       "/assets/character-page-assets/character-assets/ilyra-glacias/character-preview.png",
     weaponImg:
-      "/assets/character-page-assets/character-assets/ilyra-glacias/weapons.png",
+      "/assets/character-page-assets/character-assets/ilyra-glacias/weapon.png",
     skill1Icon:
       "/assets/character-page-assets/character-assets/ilyra-glacias/skill-1.png",
     skill2Icon:
@@ -40,7 +40,7 @@ export const nirvalis = {
     background:
       "/assets/character-page-assets/character-assets/ilyra-glacias/background.png",
   },
-  cainSnowrift: {
+  {
     name: "Cain Snowrift",
     surname: "Warden of the Frosted Lands",
     level: 48,
@@ -65,7 +65,7 @@ export const nirvalis = {
     characterPreview:
       "/assets/character-page-assets/character-assets/cain-snowrift/character-preview.png",
     weaponImg:
-      "/assets/character-page-assets/character-assets/cain-snowrift/weapons.png",
+      "/assets/character-page-assets/character-assets/cain-snowrift/weapon.png",
     skill1Icon:
       "/assets/character-page-assets/character-assets/cain-snowrift/skill-1.png",
     skill2Icon:
@@ -81,7 +81,7 @@ export const nirvalis = {
     background:
       "/assets/character-page-assets/character-assets/cain-snowrift/background.png",
   },
-  sirenYvell: {
+  {
     name: "Siren Yvell",
     surname: "Silent Snow Hunter",
     level: 45,
@@ -106,7 +106,7 @@ export const nirvalis = {
     characterPreview:
       "/assets/character-page-assets/character-assets/siren-yvell/character-preview.png",
     weaponImg:
-      "/assets/character-page-assets/character-assets/siren-yvell/weapons.png",
+      "/assets/character-page-assets/character-assets/siren-yvell/weapon.png",
     skill1Icon:
       "/assets/character-page-assets/character-assets/siren-yvell/skill-1.png",
     skill2Icon:
@@ -122,7 +122,7 @@ export const nirvalis = {
     background:
       "/assets/character-page-assets/character-assets/siren-yvell/background.png",
   },
-  ardosFreezebane: {
+  {
     name: "Ardos Freezebane",
     surname: "Frostshard Guardian",
     level: 46,
@@ -147,7 +147,7 @@ export const nirvalis = {
     characterPreview:
       "/assets/character-page-assets/character-assets/ardos-freezebane/character-preview.png",
     weaponImg:
-      "/assets/character-page-assets/character-assets/ardos-freezebane/weapons.png",
+      "/assets/character-page-assets/character-assets/ardos-freezebane/weapon.png",
     skill1Icon:
       "/assets/character-page-assets/character-assets/ardos-freezebane/skill-1.png",
     skill2Icon:
@@ -163,7 +163,7 @@ export const nirvalis = {
     background:
       "/assets/character-page-assets/character-assets/ardos-freezebane/background.png",
   },
-  lythRavenhush: {
+  {
     name: "Lyth Ravenhush",
     surname: "Shade of Winter",
     level: 47,
@@ -188,7 +188,7 @@ export const nirvalis = {
     characterPreview:
       "/assets/character-page-assets/character-assets/lyth-ravenhush/character-preview.png",
     weaponImg:
-      "/assets/character-page-assets/character-assets/lyth-ravenhush/weapons.png",
+      "/assets/character-page-assets/character-assets/lyth-ravenhush/weapon.png",
     skill1Icon:
       "/assets/character-page-assets/character-assets/lyth-ravenhush/skill-1.png",
     skill2Icon:
@@ -204,4 +204,4 @@ export const nirvalis = {
     background:
       "/assets/character-page-assets/character-assets/lyth-ravenhush/background.png",
   },
-};
+];

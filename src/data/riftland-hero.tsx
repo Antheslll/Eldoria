@@ -1,5 +1,5 @@
-export const riftland = {
-  zharoth: {
+export const riftlandHero = [
+  {
     name: "Zharoth the Shattered",
     surname: "Master of Dimensional Arrows",
     level: 55,
@@ -23,7 +23,7 @@ export const riftland = {
     characterPreview:
       "/assets/character-page-assets/character-assets/zharoth/character-preview.png",
     weaponImg:
-      "/assets/character-page-assets/character-assets/zharoth/weapons.png",
+      "/assets/character-page-assets/character-assets/zharoth/weapon.png",
     skill1Icon:
       "/assets/character-page-assets/character-assets/zharoth/skill-1.png",
     skill2Icon:
@@ -39,7 +39,7 @@ export const riftland = {
     background:
       "/assets/character-page-assets/character-assets/zharoth/background.png",
   },
-  karthos: {
+  {
     name: "Karthos the Dreadweaver",
     surname: "Master of the Abyss",
     level: 58,
@@ -63,7 +63,7 @@ export const riftland = {
     characterPreview:
       "/assets/character-page-assets/character-assets/karthos/character-preview.png",
     weaponImg:
-      "/assets/character-page-assets/character-assets/karthos/weapons.png",
+      "/assets/character-page-assets/character-assets/karthos/weapon.png",
     skill1Icon:
       "/assets/character-page-assets/character-assets/karthos/skill-1.png",
     skill2Icon:
@@ -79,7 +79,7 @@ export const riftland = {
     background:
       "/assets/character-page-assets/character-assets/karthos/background.png",
   },
-  gornak: {
+  {
     name: "Gornak Earthshatter",
     surname: "Guardian of the Shattered Earth",
     level: 60,
@@ -104,7 +104,7 @@ export const riftland = {
     characterPreview:
       "/assets/character-page-assets/character-assets/gornak-earthshatter/character-preview.png",
     weaponImg:
-      "/assets/character-page-assets/character-assets/gornak-earthshatter/weapons.png",
+      "/assets/character-page-assets/character-assets/gornak-earthshatter/weapon.png",
     skill1Icon:
       "/assets/character-page-assets/character-assets/gornak-earthshatter/skill-1.png",
     skill2Icon:
@@ -120,7 +120,7 @@ export const riftland = {
     background:
       "/assets/character-page-assets/character-assets/gornak-earthshatter/background.png",
   },
-  xyros: {
+  {
     name: "Xyros the Shadowbane",
     surname: "Master of Shadows",
     level: 54,
@@ -144,7 +144,7 @@ export const riftland = {
     characterPreview:
       "/assets/character-page-assets/character-assets/xyros/character-preview.png",
     weaponImg:
-      "/assets/character-page-assets/character-assets/xyros/weapons.png",
+      "/assets/character-page-assets/character-assets/xyros/weapon.png",
     skill1Icon:
       "/assets/character-page-assets/character-assets/xyros/skill-1.png",
     skill2Icon:
@@ -160,7 +160,7 @@ export const riftland = {
     background:
       "/assets/character-page-assets/character-assets/xyros/background.png",
   },
-  thalgar: {
+  {
     name: "Thalgar the Riftbound",
     surname: "Cosmic Warlord",
     level: 70,
@@ -184,7 +184,7 @@ export const riftland = {
     characterPreview:
       "/assets/character-page-assets/character-assets/thalgar/character-preview.png",
     weaponImg:
-      "/assets/character-page-assets/character-assets/thalgar/weapons.png",
+      "/assets/character-page-assets/character-assets/thalgar/weapon.png",
     skill1Icon:
       "/assets/character-page-assets/character-assets/thalgar/skill-1.png",
     skill2Icon:
@@ -200,7 +200,7 @@ export const riftland = {
     background:
       "/assets/character-page-assets/character-assets/thalgar/background.png",
   },
-  voras: {
+  {
     name: "Voras the Stormpiercer",
     surname: "Master of Tempests",
     level: 52,
@@ -224,7 +224,7 @@ export const riftland = {
     characterPreview:
       "/assets/character-page-assets/character-assets/voras/character-preview.png",
     weaponImg:
-      "/assets/character-page-assets/character-assets/voras/weapons.png",
+      "/assets/character-page-assets/character-assets/voras/weapon.png",
     skill1Icon:
       "/assets/character-page-assets/character-assets/voras/skill-1.png",
     skill2Icon:
@@ -240,4 +240,4 @@ export const riftland = {
     background:
       "/assets/character-page-assets/character-assets/voras/background.png",
   },
-};
+];

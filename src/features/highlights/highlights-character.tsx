@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 interface HighlightCharacterProps {
   isHover: string;
   setIsHover: (value: string) => void;
@@ -11,7 +13,8 @@ const HighlightCharacter = ({
   handleGrab,
 }: HighlightCharacterProps) => {
   return (
-    <div
+    <Link
+      to="characterpage"
       className={`${
         isHover === "world"
           ? "highlight-x-hover slide-clip-custom-non-hover w-[24%] ml-[48%]"
@@ -83,7 +86,7 @@ const HighlightCharacter = ({
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
