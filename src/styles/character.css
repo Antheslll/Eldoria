@@ -167,3 +167,16 @@ h3 {
   opacity: 1;
   transform: translate3d(0%, -30%, 100px);
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in-5ms {
+  animation: fadeIn 0.5s ease-in-out;
+}

@@ -1,6 +1,6 @@
-import CharacterAtributBar from "./character-atribut-bar";
-import CharacterLevelBar from "./character-level-bar";
-import CharacterSectionRound from "./character-section-round";
+import CharacterAtributBar from "./character-element/character-atribut-bar";
+import CharacterLevelBar from "./character-element/character-level-bar";
+import CharacterSectionRound from "./character-element/character-section-round";
 
 interface CharacterStatusPointPropsType {
   level: number;

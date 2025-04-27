@@ -8,9 +8,15 @@ export const valdenarHero = [
     st: 1600,
     power: 1900,
     def: 2300,
-    skill1: "Flame Crash",
-    skill2: "Infernal Shield",
-    skill3: "Blazing Judgement",
+    skill1: "Blazing Judgement",
+    skill2: "Flame Crash",
+    skill3: "Infernal Shield",
+    skill1Description:
+      "Blazing Judgement: Ledakan api suci yang membakar area luas, menghanguskan semua musuh tanpa ampun.",
+    skill2Description:
+      "Flame Crash: Hantaman api brutal menghancurkan pertahanan musuh dan menciptakan gelombang panas.",
+    skill3Description:
+      "Infernal Shield: Perisai api melindungi pengguna, membakar siapa pun yang berani menyerang.",
     description:
       "Pyroclasmic Fury adalah pedang legendaris terbuat dari obsidian hitam, dengan aliran lava yang mengalir di sepanjang bilahnya. Pedang ini menempa Kael Thorneblade sejak usia muda, yang merupakan hasil pernikahan antara seorang dwarf dan manusia, memberikan kekuatan api yang mematikan dan simbol keadilan. Setiap ayunan pedang ini menghancurkan musuh dengan ledakan api, mencerminkan tekad Kael untuk melindungi kerajaan Valdrenar dengan kekuatan destruktif yang tak tertandingi.",
     color: "#FF4500",
@@ -50,8 +56,14 @@ export const valdenarHero = [
     power: 1400,
     def: 1000,
     skill1: "Lightstorm Barrage",
-    skill2: "Divine Sight",
-    skill3: "Celestial Arrow",
+    skill2: "Celestial Arrow",
+    skill3: "Divine Sight",
+    skill1Description:
+      "Lightstorm Barrage: Tembakan cahaya bertubi-tubi dari langit menghantam musuh tanpa henti.",
+    skill2Description:
+      "Celestial Arrow: Anak panah suci berkecepatan tinggi menusuk musuh dengan kekuatan surgawi.",
+    skill3Description:
+      "Divine Sight: Memberikan penglihatan ilahi untuk mendeteksi musuh tersembunyi.",
     description:
       "Seren Fletchwynd adalah pemanah ulung yang dibesarkan di pegunungan, anak seorang pemahat batu yang menguasai seni memanah demi bertahan hidup. Senjatanya, Radiant Bow, terbuat dari kayu bercahaya yang dipadukan dengan kristal suci, melepaskan panah cahaya yang mampu menghancurkan musuh dari jarak jauh. Ia berdiri sebagai penjaga perbatasan utara Valdrenar, melindungi kerajaannya dengan kekuatan cahaya murni.",
     color: "#FFD700",
@@ -94,6 +106,12 @@ export const valdenarHero = [
     skill1: "Radiant Spiral",
     skill2: "Starfall Channel",
     skill3: "Mirage of Light",
+    skill1Description:
+      "Radiant Spiral: Gelombang cahaya berputar menyerang semua musuh di sekitarnya.",
+    skill2Description:
+      "Starfall Channel: Memanggil hujan bintang jatuh menghantam musuh dari langit.",
+    skill3Description:
+      "Mirage of Light: Ilusi cahaya membingungkan musuh dan membuat mereka rentan.",
     description:
       "Velka Cindergaze, seorang penyihir senior dari Menara Sulur Bara, kehilangan penglihatan di masa kecil namun memperoleh kemampuan untuk 'melihat' melalui gelombang cahaya suci. Menggunakan kekuatan matahari yang bersinar terang, ia memimpin pertahanan sihir selama pengepungan Valdrenar. Solar Scepter, tongkat suci yang dipenuhi energi matahari, mengarahkannya untuk melindungi kerajaan dengan kekuatan cahaya murni.",
     color: "#FFA500",
@@ -133,9 +151,15 @@ export const valdenarHero = [
     st: 2200,
     power: 2000,
     def: 900,
-    skill1: "Divine Fade",
+    skill1: "Silent Step",
     skill2: "Radiant Slash",
-    skill3: "Silent Step",
+    skill3: "Divine Fade",
+    skill1Description:
+      "Silent Step: Gerakan sunyi untuk berpindah tempat tanpa terdeteksi.",
+    skill2Description:
+      "Radiant Slash: Serangan cepat dengan cahaya murni yang menembus pertahanan musuh.",
+    skill3Description:
+      "Divine Fade: Menghilang dalam sekejap, menghindari serangan musuh.",
     description:
       "Ravik Flameveil adalah mantan pencuri yang dilatih oleh pasukan rahasia kerajaan, menguasai teknik ilusi cahaya dan pergerakan siluman yang tak terlihat. Dengan Luminous Dagger, senjata kecil namun bercahaya, ia menghancurkan ancaman dari dalam kerajaan Valdrenar dengan kecepatan dan kecerdikan. Menggunakan kekuatan cahaya yang disalurkan melalui senjatanya, ia mengaburkan jejaknya dalam kegelapan.",
     color: "#F5DEB3",
@@ -174,9 +198,16 @@ export const valdenarHero = [
     st: 2000,
     power: 1850,
     def: 1500,
-    skill1: "Light Piercer",
-    skill2: "Divine Thrust",
-    skill3: "Heaven's Shield Drive",
+    skill1: "Heaven's Shield",
+    skill2: "Light Piercer",
+    skill3: "Divine Thrust",
+    skill1Description:
+      "Heaven's Shield: Perisai surgawi kuat menyerap serangan besar dengan cahaya suci.",
+    skill2Description:
+      "Light Piercer: Tembakan cahaya tajam yang mampu menembus armor terkeras.",
+    skill3Description:
+      "Divine Thrust: Tusukan ilahi cepat yang menargetkan titik vital musuh.",
+
     description:
       "Doran Ashpike adalah pahlawan garis depan dalam Perang Gunung Hitam yang memimpin serangan dengan Spear of Dawn, tombak suci yang ditempa dengan cahaya matahari pertama. Tombaknya mampu menembus pertahanan musuh dan menghancurkan dengan energi cahaya yang murni. Sebagai pemimpin dalam formasi tombak berapi, Doran melambangkan keberanian dan kekuatan kerajaan Valdrenar dalam menghadapi ancaman.",
     color: "#FFF8DC",

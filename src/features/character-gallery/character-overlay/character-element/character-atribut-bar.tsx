@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 interface CharacterAtributBarPropsType {
   attribute: string;
   attributeColor: string;
@@ -10,6 +12,11 @@ const CharacterAtributBar = ({
   point,
 }: CharacterAtributBarPropsType) => {
   const theWidth = (point / 4000) * 100;
+  const [fillingBar, setFillingBar] = useState(false);
+
+  useEffect(() => {
+    setFillingBar(true);
+  }, []);
   return (
     <div className="pl-[10%]">
       <div className="h-[60px]  grid grid-rows-[20px_20px_10px]">
@@ -21,8 +28,8 @@ const CharacterAtributBar = ({
         <div className="flex items-center">
           <div className="w-[80%] h-[15px] bg-white">
             <div
-              className={` h-[15px] ${attributeColor}`}
-              style={{ width: `${theWidth}%` }}
+              className={` h-[15px] ${attributeColor} transition-all ease-in-out duration-2000`}
+              style={{ width: `${fillingBar ? theWidth : 0}%` }}
             ></div>
           </div>
         </div>

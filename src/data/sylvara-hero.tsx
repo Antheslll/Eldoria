@@ -8,9 +8,15 @@ export const sylvaraHero = [
     st: 2400,
     power: 1350,
     def: 800,
-    skill1: "Hawk’s Mark",
-    skill2: "Rain of Arrows",
-    skill3: "Silent Gale",
+    skill1: "Silent Gale",
+    skill2: "Hawk’s Mark",
+    skill3: "Rain of Arrows",
+    skill1Description:
+      "Silent Gale: Angin sunyi memotong udara, menyerang musuh dengan kecepatan tak terlihat.",
+    skill2Description:
+      "Hawk’s Mark: Menandai musuh dengan presisi elang, meningkatkan akurasi serangan.",
+    skill3Description:
+      "Rain of Arrows: Hujan anak panah menghujam area luas, melukai banyak musuh sekaligus.",
     description:
       "Aeren Lyrwind adalah pemanah jarak jauh legendaris dari hutan Sylvara, dibesarkan oleh kaum elf sejak bayi. Ia menguasai medan tinggi dan rimbunnya pepohonan untuk mengamati dan menyerang tanpa terlihat. Senjatanya, Windpiercer, adalah busur panjang yang diukir dari kayu pohon roh dan diselaraskan dengan angin hutan, menembakkan anak panah yang membelah udara dalam keheningan dan presisi sempurna. Ia bertugas menjaga Gerbang Dedaunan, batas antara dunia manusia dan roh.",
     color: "#98FB98",
@@ -50,9 +56,15 @@ export const sylvaraHero = [
     st: 1500,
     power: 2200,
     def: 600,
-    skill1: "Nature’s Embrace",
-    skill2: "Vine Grasp",
-    skill3: "Spirit Storm",
+    skill1: "Vine Grasp",
+    skill2: "Spirit Storm",
+    skill3: "Nature’s Embrace",
+    skill1Description:
+      "Vine Grasp: Sulur liar menjulur dan mengikat musuh, membatasi pergerakan mereka.",
+    skill2Description:
+      "Spirit Storm: Badai roh alam menyerang musuh dengan kekuatan magis.",
+    skill3Description:
+      "Nature’s Embrace: Energi alam menyembuhkan luka dan memperkuat pertahanan.",
     description:
       "Naera Elynthar adalah penyihir keturunan garis langsung dari druid pertama yang menjaga keseimbangan alam. Ia tumbuh di jantung Hutan Suci Sylvara, tempat di mana roh alam berbicara dalam bisikan angin dan akar. Tongkatnya, Elaran’s Bloom, tumbuh dari benih pohon roh kuno dan diperkuat oleh kristal alam, memancarkan cahaya hijau lembut yang mampu menyembuhkan atau menghancurkan. Ia dikenal sebagai penjaga keselarasan antara dunia manusia dan semesta.",
     color: "#7CFC00",
@@ -91,9 +103,15 @@ export const sylvaraHero = [
     st: 1600,
     power: 1700,
     def: 1900,
-    skill1: "Thorn Shield",
-    skill2: "Ironbark Smash",
+    skill1: "Ironbark Smash",
+    skill2: "Thorn Shield",
     skill3: "Guardian Roar",
+    skill1Description:
+      "Ironbark Smash: Hantaman keras menggunakan kekuatan kulit kayu besi, menghancurkan pertahanan musuh.",
+    skill2Description:
+      "Thorn Shield: Perisai duri melindungi pengguna, memantulkan serangan musuh.",
+    skill3Description:
+      "Guardian Roar: Auman penjaga alam mengguncang lawan dan meningkatkan semangat sekutu.",
     description:
       "Fayen Woodguard adalah ksatria pelindung wilayah barat Sylvara, ditempa oleh ritual akar besi yang mengikat kekuatan hutan ke dalam raganya. Ia mengenakan armor berat dari kayu roh yang telah membatu dan mengayunkan Oakrend, kombinasi pedang dan perisai yang dibuat dari batang pohon kuno yang telah menyatu dengan logam alam. Keteguhannya di medan tempur menjadi dinding pertahanan bagi rakyat desa yang hidup dalam bayang-bayang hutan.",
     color: "#556B2F",
@@ -133,8 +151,14 @@ export const sylvaraHero = [
     power: 1950,
     def: 950,
     skill1: "Shadowroot Step",
-    skill2: "Poison Dagger Rain",
-    skill3: "Camouflage Fade",
+    skill2: "Camouflage Fade",
+    skill3: "Poison Dagger Rain",
+    skill1Description:
+      "Shadowroot Step: Berpindah tempat lewat akar bayangan, sulit dilacak musuh.",
+    skill2Description:
+      "Camouflage Fade: Menghilang ke dalam lingkungan, membuat musuh kesulitan mendeteksi.",
+    skill3Description:
+      "Poison Dagger Rain: Hujan belati beracun menyebar, melemahkan banyak musuh sekaligus.",
     description:
       "Verris Shadeleaf adalah pembunuh tersembunyi dari suku hutan terdalam Sylvara, dilatih dalam seni kamuflase dan serangan diam. Ia memanfaatkan racun alami dari tanaman liar dan gerakan cepat seperti bayangan. Senjatanya, Duskleaf Fangs, adalah dua belati beracun yang dipahat dari akar gelap dan disempurnakan dengan racun tanaman suci. Ia menyatu dengan alam, muncul dan menghilang sebelum lawan sempat menyadari kehadirannya.",
     color: "#2E8B57",
@@ -173,9 +197,15 @@ export const sylvaraHero = [
     st: 2100,
     power: 1800,
     def: 1400,
-    skill1: "Thorn Barrage",
-    skill2: "Spiral Bloom Thrust",
-    skill3: "Verdant Wall",
+    skill1: "Spiral Bloom Thrust",
+    skill2: "Verdant Wall",
+    skill3: "Thorn Barrage",
+    skill1Description:
+      "Spiral Bloom Thrust: Serangan spiral bunga liar menembus pertahanan musuh dengan kekuatan alami.",
+    skill2Description:
+      "Verdant Wall: Tembok tanaman rimbun melindungi dari serangan musuh.",
+    skill3Description:
+      "Thorn Barrage: Ledakan duri bertubi-tubi menyerang semua musuh di area.",
     description:
       "Orin Thornlance adalah prajurit berdarah campuran manusia dan dryad yang mewarisi kekuatan tumbuhan hidup. Ia bertarung dengan Sylvaris, tombak roh yang tumbuh dari akar pohon penjaga. Senjata ini hidup dan bereaksi terhadap bahaya, mengeluarkan duri dan akar yang membelit musuh. Orin dikenal sebagai tembok pertama pertahanan saat musuh menginjakkan kaki di perbatasan hutan.",
     color: "#556B2F",

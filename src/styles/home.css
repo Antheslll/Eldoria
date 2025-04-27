@@ -11,10 +11,6 @@
   clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
 }
 
-.home-background {
-  background: linear-gradient(to bottom, #0a0c14 0%, #0b0d30 100%);
-}
-
 .slide-clip-custom {
   clip-path: polygon(30% 0%, 100% 0%, 70% 100%, 0% 100%);
 }

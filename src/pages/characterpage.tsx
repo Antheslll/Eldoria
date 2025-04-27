@@ -8,7 +8,7 @@ import { riftlandHero } from "../data/riftland-hero";
 import { useEffect, useState } from "react";
 import { addScrollListener } from "../lib/scroll-detect";
 import { useSearchParams } from "react-router-dom";
-import CharacterOverlay from "../features/character-gallery/character-overlay";
+import CharacterOverlay from "../features/character-gallery/character-overlay/character-overlay";
 
 const CharacterPage = () => {
   const [scrollDistance, setScrollDistance] = useState<number>(0);
@@ -36,6 +36,7 @@ const CharacterPage = () => {
     <>
       {isOverlayOpen && (
         <CharacterOverlay
+          isOverlayOpen={isOverlayOpen}
           closeOverlay={closeOverlay}
           searchParams={searchParams}
         />

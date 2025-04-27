@@ -1,8 +1,15 @@
+import { useEffect, useState } from "react";
+
 interface CharacterLevelBarProps {
   level: number;
 }
 
 const CharacterLevelBar = ({ level }: CharacterLevelBarProps) => {
+  const [fillingBar, setFillingBar] = useState(false);
+
+  useEffect(() => {
+    setFillingBar(true);
+  }, []);
   const point = level * 1000;
   const theWidth = (point / 100000) * 100;
   return (
@@ -15,8 +22,8 @@ const CharacterLevelBar = ({ level }: CharacterLevelBarProps) => {
       <div className="flex items-center">
         <div className="w-[87%] h-[18px] bg-white">
           <div
-            className=" h-[18px] bg-red-500"
-            style={{ width: `${theWidth}%` }}
+            className=" h-[18px] bg-red-500 transition-all ease-in-out duration-2000"
+            style={{ width: `${fillingBar ? theWidth : 0}%` }}
           ></div>
         </div>
       </div>

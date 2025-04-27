@@ -8,9 +8,15 @@ export const dravakhorHero = [
     st: 1500,
     power: 2000,
     def: 2500,
-    skill1: "Earth Splitter",
+    skill1: "Tremor Stomp",
     skill2: "Shield of Ruin",
-    skill3: "Tremor Stomp",
+    skill3: "Earth Splitter",
+    skill1Description:
+      "Tremor Stomp: Hentakan kuat mengguncang tanah dan menjatuhkan musuh di sekitar.",
+    skill2Description:
+      "Shield of Ruin: Perisai batu runtuh melindungi sambil memantulkan serangan.",
+    skill3Description:
+      "Earth Splitter: Membelah tanah, menciptakan jurang untuk menghancurkan barisan musuh.",
     description:
       "Grahn Duskstone adalah ksatria batu hitam yang menjaga gerbang jurang terdalam Dravakhor. Tubuhnya setangguh granit dan langkahnya membelah tanah. Ia bertempur menggunakan Ruinbreaker, sebuah pedang besar bertatahkan kristal obsidian dan logam kegelapan yang diperoleh dari reruntuhan terdalam. Suaranya bergemuruh seperti batu yang retak, dan kisahnya menjadi legenda setelah bertahan dalam dua belas pengepungan tanpa sekali pun mundur.",
     color: "#4B3621",
@@ -52,6 +58,12 @@ export const dravakhorHero = [
     skill1: "Dark Pulse",
     skill2: "Void Bind",
     skill3: "Soul Collapse",
+    skill1Description:
+      "Dark Pulse: Gelombang energi kegelapan melumpuhkan musuh seketika.",
+    skill2Description:
+      "Void Bind: Mengikat musuh dengan kekuatan kehampaan, membuat mereka tak berdaya.",
+    skill3Description:
+      "Soul Collapse: Menghancurkan jiwa musuh, melemahkan kekuatan mereka drastis.",
     description:
       "Kelra Voidmark adalah penyihir kegelapan yang terusir dari tanah asalnya karena menguasai sihir larangan. Di Dravakhor, ia menemukan tempat di mana pengetahuan gelap dihargai. Veil of Oblivion, tongkat sihirnya, dibuat dari kayu hangus lembah terlupakan dan dihiasi batu jiwa. Ia mampu memanggil kehampaan dan membelokkan roh, menjadikannya penasehat sihir tertinggi di kerajaan bayangan ini.",
     color: "#2D1B2A",
@@ -93,6 +105,12 @@ export const dravakhorHero = [
     skill1: "Night Fang",
     skill2: "Death’s Whisper",
     skill3: "Echo Fade",
+    skill1Description:
+      "Night Fang: Serangan cepat dari bayangan menusuk musuh tanpa suara.",
+    skill2Description:
+      "Death’s Whisper: Bisikan kematian melemahkan semangat dan pertahanan musuh.",
+    skill3Description:
+      "Echo Fade: Menghilang meninggalkan gema yang membingungkan musuh.",
     description:
       "Zirk Blackfang adalah pembunuh bayangan yang muncul dan menghilang layaknya mimpi buruk di gua-gua Dravakhor. Ia bergerak tanpa suara, membunuh tanpa jejak. Gloomfang, dua belati melengkungnya, dibuat dari gigi kelalawar gua raksasa yang diasah dengan racun pekat. Ia dipercaya telah menembus istana musuh dan kembali membawa kepala tanpa seorang pun melihatnya datang.",
     color: "#1A1A1A",
@@ -134,6 +152,12 @@ export const dravakhorHero = [
     skill1: "Granite Drive",
     skill2: "Core Strike",
     skill3: "Echo Lance",
+    skill1Description:
+      "Granite Drive: Serangan beruntun berbasis kekuatan batu, menghancurkan pertahanan musuh.",
+    skill2Description:
+      "Core Strike: Pukulan kuat yang menargetkan pusat kekuatan lawan.",
+    skill3Description:
+      "Echo Lance: Tombak suara yang menyerang cepat dan menusuk dari kejauhan.",
     description:
       "Drul Stonepierce adalah penjaga tambang terdalam Dravakhor dan ahli tempur barisan depan. Ia memegang Deepgore, tombak obsidian dengan ujung yang menggetarkan udara saat dihentakkan. Senjata ini dibuat di perapian lava tua dan diritualkan dengan mantra penembus logam. Drul mampu merobek formasi musuh dan membuka jalan bagi pasukan kegelapan.",
     color: "#2C2C2C",
@@ -175,6 +199,12 @@ export const dravakhorHero = [
     skill1: "Phantom Arrow",
     skill2: "Echo Hunt",
     skill3: "Dusk Sniper",
+    skill1Description:
+      "Phantom Arrow: Anak panah hantu menyerang diam-diam, menembus pertahanan musuh.",
+    skill2Description:
+      "Echo Hunt: Memburu musuh dengan gema langkah yang sulit dilacak.",
+    skill3Description:
+      "Dusk Sniper: Tembakan presisi tinggi dalam kegelapan, menghancurkan target.",
     description:
       "Murah Shadesight adalah pemanah buta yang membidik dengan indera suara dan tekanan udara. Ia melindungi rakyat goa saat Perang Cahaya, dan keberaniannya membuatnya dijuluki “mata malam”. Busurnya, Echoveil Bow, terbuat dari tanduk makhluk gua dan diselaraskan dengan gema tanah, memungkinkan Murah membidik dari kejauhan tanpa melihat, hanya mendengar napas lawannya.",
     color: "#3A3A3A",

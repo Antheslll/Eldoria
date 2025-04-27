@@ -17,17 +17,19 @@ const CharacterAlbum = ({
       <div className=" text-white underline flex justify-center items-center">
         <h2 className="text-[40px] ">{title}</h2>
       </div>
-      <div className="flex flex-wrap justify-center gap-[100px]">
-        {heroData.map((hero) => (
-          <CharacterCard
-            key={generateRandomKey()}
-            name={hero.name}
-            coverImage={hero.cardImg}
-            title={hero.cardTextImg}
-            character={hero.cardImgHover}
-            openOverlay={openOverlay}
-          />
-        ))}
+      <div className="flex justify-center">
+        <div className="w-[80%] flex flex-wrap justify-center gap-[30px]">
+          {heroData.map((hero) => (
+            <CharacterCard
+              key={generateRandomKey()}
+              name={hero.name}
+              coverImage={hero.cardImg}
+              title={hero.cardTextImg}
+              character={hero.cardImgHover}
+              openOverlay={openOverlay}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

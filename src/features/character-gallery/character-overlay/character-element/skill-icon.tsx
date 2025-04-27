@@ -28,7 +28,7 @@ const SkillIcon = ({
         </div>
 
         <div className="flex justify-center">
-          <span className=" text-white text-[8px] fell-english">
+          <span className=" text-white text-center text-[8px] fell-english">
             {skillName}
           </span>
         </div>
