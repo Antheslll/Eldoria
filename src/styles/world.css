@@ -8,6 +8,15 @@
   src: url("/assets/fonts/PirataOne-Regular.ttf");
 }
 
+@font-face {
+  font-family: "eb-garamond-regular";
+  src: url("/assets/fonts/EB_Garamond/static/EBGaramond-Regular.ttf");
+}
+
+.font-eb-garamond {
+  font-family: "eb-garamond-regular";
+}
+
 .font-pirata {
   font-family: "pirata-one";
 }
@@ -26,4 +35,10 @@
     rgba(102, 102, 102, 0) 30%,
     rgba(0, 0, 0, 1) 100%
   );
+}
+
+.centered-positioning {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

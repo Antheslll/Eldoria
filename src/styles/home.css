@@ -3,6 +3,10 @@
   src: url("/assets/fonts/PirataOne-Regular.ttf");
 }
 
+.home-background {
+  background: linear-gradient(to bottom, #0a0c14 0%, #0b0d30 100%);
+}
+
 .font-pirata {
   font-family: "pirata-one";
 }

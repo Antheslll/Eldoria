@@ -2,15 +2,20 @@ interface CharacterBadgeProps {
   profileRef: string;
   label: string;
   kingdom: string;
+  handleSetKingdom: (kingdom: string) => void;
 }
 
 const CharacterBadge = ({
   profileRef,
   label,
   kingdom,
+  handleSetKingdom,
 }: CharacterBadgeProps) => {
   return (
-    <div className="w-[200px] h-[200px] absolute z-20 rounded-full bg-white/30 backdrop-blur-[5px] scale-[50%]">
+    <div
+      className="w-[200px] h-[200px] absolute z-20 rounded-full bg-white/30 backdrop-blur-[5px] scale-[50%] cursor-pointer"
+      onClick={() => handleSetKingdom(kingdom)}
+    >
       <div
         className="w-[130px] h-[130px] absolute z-30 bg-center bg-cover rounded-full ml-[35px] mt-[30px] border-15 border-white"
         style={{

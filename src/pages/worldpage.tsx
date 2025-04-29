@@ -1,8 +1,15 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import CharacterBadge from "../features/eldoria-map/character-badge";
 import "../styles/world.css";
+import KingdomOverlay from "../features/world-overlay/kingdom-overlay";
 
 const WorldPage = () => {
+  const [isKingdom, setIsKingdom] = useState("");
+
+  const handleSetKingdom = (kingdom: string) => {
+    return setIsKingdom(kingdom);
+  };
+
   type Region = "valdenar" | "sylvara" | "dravakhor" | "nirvalis" | "riftlands";
 
   type ProfileSrc = {
@@ -37,7 +44,13 @@ const WorldPage = () => {
 
   return (
     <>
-      <div className="w-full h-[900px] world-background grid grid-rows-[150px_759px]">
+      {isKingdom && (
+        <KingdomOverlay
+          handleSetKingdom={handleSetKingdom}
+          isKingdom={isKingdom}
+        />
+      )}
+      <main className="w-full h-[900px] world-background grid grid-rows-[150px_759px]">
         <div className="flex justify-center items-end">
           <h1 className="underline text-white text-[40px] fell-english">
             The Four Kingdoms: Born from the Celestial Void
@@ -50,7 +63,7 @@ const WorldPage = () => {
               className="w-[90%]"
               alt="map of Eldoria"
             />
-            <div className="w-[90%] h-[645px] absolute z-10 map-cover grid grid-cols-[10%_10%_10%_10%_10%_10%_10%_10%_10%]">
+            <div className="w-[90%] h-[50vw] absolute z-10 map-cover grid grid-cols-[10%_10%_10%_10%_10%_10%_10%_10%_10%]">
               <div></div>
               <div className=" w-full h-full ">
                 <div className="mt-[200%]">
@@ -58,6 +71,7 @@ const WorldPage = () => {
                     profileRef={profileSrc.current.dravakhor}
                     label={label.current.labelDravakhor}
                     kingdom="Dravakhor"
+                    handleSetKingdom={handleSetKingdom}
                   />
                 </div>
               </div>
@@ -68,6 +82,7 @@ const WorldPage = () => {
                     profileRef={profileSrc.current.valdenar}
                     label={label.current.labelValdenar}
                     kingdom="Valdenar"
+                    handleSetKingdom={handleSetKingdom}
                   />
                 </div>
               </div>
@@ -77,6 +92,7 @@ const WorldPage = () => {
                     profileRef={profileSrc.current.nirvalis}
                     label={label.current.labelNirvalis}
                     kingdom="Nirvalis"
+                    handleSetKingdom={handleSetKingdom}
                   />
                 </div>
                 <div className="ml-[45%] mt-[330%]">
@@ -84,6 +100,7 @@ const WorldPage = () => {
                     profileRef={profileSrc.current.sylvara}
                     label={label.current.labelSylvara}
                     kingdom="Sylvara"
+                    handleSetKingdom={handleSetKingdom}
                   />
                 </div>
               </div>
@@ -93,6 +110,7 @@ const WorldPage = () => {
                     profileRef={profileSrc.current.valdenar}
                     label={label.current.labelValdenar}
                     kingdom="Valdenar"
+                    handleSetKingdom={handleSetKingdom}
                   />
                 </div>
               </div>
@@ -102,6 +120,7 @@ const WorldPage = () => {
                     profileRef={profileSrc.current.riftlands}
                     label={label.current.labelRiftlands}
                     kingdom="Riftlands"
+                    handleSetKingdom={handleSetKingdom}
                   />
                 </div>
               </div>
@@ -112,13 +131,14 @@ const WorldPage = () => {
                     profileRef={profileSrc.current.valdenar}
                     label={label.current.labelValdenar}
                     kingdom="Valdenar"
+                    handleSetKingdom={handleSetKingdom}
                   />
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </>
   );
 };
