@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "pirata-one";
+  src: url("/assets/fonts/PirataOne-Regular.ttf");
+}
+@font-face {
+  font-family: "eb-garamond";
+  src: url("/assets/fonts/EB_Garamond/static/EbGaramond-Regular.ttf");
+}
+@font-face {
+  font-family: "Fell-English";
+  src: url("/assets/fonts/im_fell_english_sc/IMFeENsc28P.ttf");
+}
+
+.fell-english {
+  font-family: "Fell-English";
+}
+
+.centered-positioning {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.font-pirata {
+  font-family: "pirata-one";
+}
+
+.font-eb-garamond {
+  font-family: "eb-garamond";
+}

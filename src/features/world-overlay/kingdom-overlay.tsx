@@ -1,7 +1,7 @@
 import KingdomDescription from "./kingdom-description";
 import KingdomPreview from "./kingdom-preview";
 import { forKingdom } from "../../data/kingdom-data";
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 interface KingdomOverlayProps {
   handleSetKingdom: (kingdom: string) => void;
@@ -52,15 +52,31 @@ const KingdomOverlay = ({
     };
   }, [filteredKingdom]);
 
+  const [forTransition, setTransition] = useState(false);
+
+  useEffect(() => {
+    setTransition(true);
+  }, []);
+
+  const handleClose = () => {
+    setTransition(false);
+
+    setTimeout(() => {
+      handleSetKingdom("");
+    }, 500);
+  };
+
   return (
     <div
       className="w-[100%] h-[100vh] fixed z-60 bg-black/50 centered-positioning"
       onClick={() => {
-        handleSetKingdom("");
+        handleClose();
       }}
     >
       <div
-        className="w-[80%] h-[90vh]  grid grid-cols-[35%_65%]"
+        className={`${
+          forTransition ? "opacity-100" : "opacity-0"
+        }  transition-all duration-700 ease-in-out w-[80%] h-[90vh]  grid grid-cols-[35%_65%]`}
         onClick={(e) => e.stopPropagation()}
       >
         <KingdomDescription

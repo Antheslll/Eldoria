@@ -7,7 +7,7 @@ const WorldPage = () => {
   const [isKingdom, setIsKingdom] = useState("");
 
   const handleSetKingdom = (kingdom: string) => {
-    return setIsKingdom(kingdom);
+    setIsKingdom(kingdom);
   };
 
   type Region = "valdenar" | "sylvara" | "dravakhor" | "nirvalis" | "riftlands";
