@@ -5,13 +5,13 @@ import { sylvaraHero } from "../data/sylvara-hero";
 import { nirvalisHero } from "../data/nirvalis-hero";
 import { dravakhorHero } from "../data/dravakhor-hero";
 import { riftlandHero } from "../data/riftland-hero";
-import { useEffect, useState } from "react";
-import { addScrollListener } from "../lib/scroll-detect";
+// import { useEffect } from "react";
+// import { addScrollListener } from "../lib/scroll-detect";
 import { useSearchParams } from "react-router-dom";
 import CharacterOverlay from "../features/character-gallery/character-overlay/character-overlay";
 
 const CharacterPage = () => {
-  const [scrollDistance, setScrollDistance] = useState<number>(0);
+  // const [scrollDistance, setScrollDistance] = useState<number>(0);
   const [searchParams, setSearchParams] = useSearchParams();
 
   const isOverlayOpen = searchParams.get("hero") !== null;
@@ -24,13 +24,13 @@ const CharacterPage = () => {
     setSearchParams("");
   };
 
-  useEffect(() => {
-    const cleanup = addScrollListener((distance) => {
-      setScrollDistance(distance);
-    });
+  // useEffect(() => {
+  //   const cleanup = addScrollListener((distance) => {
+  //     setScrollDistance(distance);
+  //   });
 
-    return cleanup;
-  }, []);
+  //   return cleanup;
+  // }, []);
 
   return (
     <>
@@ -41,9 +41,8 @@ const CharacterPage = () => {
           searchParams={searchParams}
         />
       )}
-      <main
-        className={`w-full h-[5500px] pt-5 pb-5 duration-500 transition-all ${
-          scrollDistance > 550 && scrollDistance < 1392
+      {/* 
+scrollDistance > 550 && scrollDistance < 1392
             ? "character-valdenar-background"
             : scrollDistance > 1392 && scrollDistance < 2454
             ? "character-sylvara-background"
@@ -51,8 +50,9 @@ const CharacterPage = () => {
             ? "character-nirvalis-background"
             : scrollDistance > 3454 && scrollDistance < 4524
             ? "character-dravakhor-background"
-            : "character-background"
-        }`}
+            : "character-background" */}
+      <main
+        className={`w-full xl:h-[clamp(5000px,820vh,6500px)] xl:pt-[20vh] lg:h-[clamp(4800px,570vh,5300px)] sm:h-[clamp(4600px,1300vh,9000px)] lg:pt-[10vh] md:h-[clamp(5900px,470vh,6200px)] h-[clamp(4600px,530vh,5000px)] pt-[2vh] pb-5 duration-500 transition-all character-background`}
       >
         <CharacterAlbum
           title="Guardian of The Light of Valdenar"

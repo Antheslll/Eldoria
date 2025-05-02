@@ -10,14 +10,16 @@ const OverlayNavigation = ({ imgSrc, text }: OverlayNavigationType) => {
     <div
       className={` w-full ${
         imgSrc === "" ? "fade-out" : "fade-in"
-      } h-[600px] bg-black/80 absolute z-30 flex justify-center items-end pointer-events-none transition-all duration-300 `}
+      } lg:h-[100vh] md:hidden hidden sm:hidden bg-black/80 absolute z-30 lg:flex justify-center items-end pointer-events-none transition-all duration-300 `}
     >
       <div
-        className={` w-full h-[600px] bg-center bg-cover absolute z-40`}
+        className={` w-full lg:h-[100vh] md:h-[clamp(600px,60vh,900px)] bg-center bg-cover absolute z-40`}
         style={{ backgroundImage: `url(${imgSrc})` }}
       >
-        <div className="w-full h-[600px] bg-black/50 absolute z-50 flex justify-center items-center ">
-          <h2 className={`text-white font-pirata text-[80px]`}>{text}</h2>
+        <div className="w-full lg:h-[100vh] md:h-[clamp(600px,60vh,900px)] bg-black/50 absolute z-50 flex justify-center items-center ">
+          <h2 className={`text-white font-pirata lg:text-[7vw] md:text-[9vw]`}>
+            {text}
+          </h2>
         </div>
       </div>
     </div>

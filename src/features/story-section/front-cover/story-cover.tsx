@@ -26,7 +26,7 @@ const StoryCover = ({
       style={{ backgroundImage: `url("/assets/story-page-asset/cover.png")` }}
     >
       <div className="w-full h-full bg-black/60 centered-positioning ">
-        <div className=" w-[60%] h-[60vh] grid grid-rows-[50px_100px_40px_50px_60px]">
+        <div className="w-[60%] lg:h-[60vh] grid lg:grid-rows-[50px_100px_40px_50px_60px]">
           <TopOrnament />
           <StoryHeaderCover text={text} />
           <BottomOrnament />

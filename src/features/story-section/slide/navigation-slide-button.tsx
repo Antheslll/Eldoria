@@ -23,11 +23,12 @@ const NavigationSlideButton = ({
     >
       {text === "prev" ? (
         <>
-          &lt;&lt; <span className="text-[20px]">Prev</span>
+          &lt;&lt;{" "}
+          <span className="lg:text-[clamp(12px,1.5vw,20px)]">Prev</span>
         </>
       ) : (
         <>
-          <span className="text-[20px]">Next</span>&gt;&gt;
+          <span className="lg:text-[clamp(12px,1.5vw,20px)]">Next</span>&gt;&gt;
         </>
       )}
     </button>

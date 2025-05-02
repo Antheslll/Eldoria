@@ -2,6 +2,7 @@ import KingdomDescription from "./kingdom-description";
 import KingdomPreview from "./kingdom-preview";
 import { forKingdom } from "../../data/kingdom-data";
 import { useEffect, useMemo, useState } from "react";
+import useWindowSize from "../../hooks/useWindowSize";
 
 interface KingdomOverlayProps {
   handleSetKingdom: (kingdom: string) => void;
@@ -66,36 +67,132 @@ const KingdomOverlay = ({
     }, 500);
   };
 
-  return (
-    <div
-      className="w-[100%] h-[100vh] fixed z-60 bg-black/50 centered-positioning"
-      onClick={() => {
-        handleClose();
-      }}
-    >
+  const { width } = useWindowSize();
+  if (width > 1024) {
+    return (
       <div
-        className={`${
-          forTransition ? "opacity-100" : "opacity-0"
-        }  transition-all duration-700 ease-in-out w-[80%] h-[90vh]  grid grid-cols-[35%_65%]`}
-        onClick={(e) => e.stopPropagation()}
+        className="w-[100%] h-[100vh] fixed z-60 bg-black/50 centered-positioning"
+        onClick={() => {
+          handleClose();
+        }}
       >
-        <KingdomDescription
-          kingdom={kingdomName}
-          color={kingdomColor}
-          title={kingdomTitle}
-          info={kingdomInfo}
-        />
-        <KingdomPreview
-          color={kingdomColor}
-          charAssets={kingdomCharAssets}
-          logo={kingdomLogo}
-          land={kingdomLand}
-          location={kingdomLocation}
-          logoBg={kingdomLogoBg}
-        />
+        <div
+          className={`${
+            forTransition ? "opacity-100" : "opacity-0"
+          }  transition-all duration-700 ease-in-out xl:w-[80%] xl:h-[90vh] lg:w-[80%] lg:h-[90vh] grid xl:grid-cols-[35%_65%] lg:grid-cols-[35%_65%]`}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <KingdomDescription
+            kingdom={kingdomName}
+            color={kingdomColor}
+            title={kingdomTitle}
+            info={kingdomInfo}
+          />
+          <KingdomPreview
+            color={kingdomColor}
+            charAssets={kingdomCharAssets}
+            logo={kingdomLogo}
+            land={kingdomLand}
+            location={kingdomLocation}
+            logoBg={kingdomLogoBg}
+          />
+        </div>
       </div>
-    </div>
-  );
+    );
+  } else if (width > 768) {
+    return (
+      <div
+        className="w-[100%] h-[100vh] fixed z-60 bg-black/50 centered-positioning"
+        onClick={() => {
+          handleClose();
+        }}
+      >
+        <div
+          className={`${
+            forTransition ? "opacity-100" : "opacity-0"
+          }  transition-all duration-700 ease-in-out md:w-[80%] md:h-[95vh] grid md:grid-rows-[45%_55%]`}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <KingdomPreview
+            color={kingdomColor}
+            charAssets={kingdomCharAssets}
+            logo={kingdomLogo}
+            land={kingdomLand}
+            location={kingdomLocation}
+            logoBg={kingdomLogoBg}
+          />
+          <KingdomDescription
+            kingdom={kingdomName}
+            color={kingdomColor}
+            title={kingdomTitle}
+            info={kingdomInfo}
+          />
+        </div>
+      </div>
+    );
+  } else if (width > 640) {
+    return (
+      <div
+        className="w-[100%] h-[100vh] fixed z-60 bg-black/50 centered-positioning"
+        onClick={() => {
+          handleClose();
+        }}
+      >
+        <div
+          className={`${
+            forTransition ? "opacity-100" : "opacity-0"
+          }  transition-all duration-700 ease-in-out xl:w-[80%] xl:h-[90vh] lg:w-[80%] lg:h-[90vh] sm:w-[80%] sm:h-[90vh] grid xl:grid-cols-[35%_65%] lg:grid-cols-[35%_65%] sm:grid-cols-[35%_65%]`}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <KingdomDescription
+            kingdom={kingdomName}
+            color={kingdomColor}
+            title={kingdomTitle}
+            info={kingdomInfo}
+          />
+          <KingdomPreview
+            color={kingdomColor}
+            charAssets={kingdomCharAssets}
+            logo={kingdomLogo}
+            land={kingdomLand}
+            location={kingdomLocation}
+            logoBg={kingdomLogoBg}
+          />
+        </div>
+      </div>
+    );
+  } else if (width > 0) {
+    return (
+      <div
+        className="w-[100%] h-[100vh] fixed z-60 bg-black/50 centered-positioning"
+        onClick={() => {
+          handleClose();
+        }}
+      >
+        <div
+          className={`${
+            forTransition ? "opacity-100" : "opacity-0"
+          }  transition-all duration-700 ease-in-out md:w-[80%] md:h-[95vh] grid md:grid-rows-[45%_55%] h-[95vh] grid-rows-[45%_55%]`}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <KingdomPreview
+            color={kingdomColor}
+            charAssets={kingdomCharAssets}
+            logo={kingdomLogo}
+            land={kingdomLand}
+            location={kingdomLocation}
+            logoBg={kingdomLogoBg}
+          />
+          <KingdomDescription
+            kingdom={kingdomName}
+            color={kingdomColor}
+            title={kingdomTitle}
+            info={kingdomInfo}
+          />
+        </div>
+      </div>
+    );
+  }
 };
 
 export default KingdomOverlay;

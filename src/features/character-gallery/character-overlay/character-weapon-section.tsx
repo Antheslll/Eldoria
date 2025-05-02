@@ -10,7 +10,7 @@ const CharacterWeaponSection = ({
 }: CharacterWeaponSectionProps) => {
   return (
     <div className="bg-black/30 grid grid-cols-[30%_70%]">
-      <div className="w-full h-[75px] flex justify-center items-center">
+      <div className="w-full lg:h-[75px] flex justify-center items-center">
         <CharacterSectionRound>
           <img src={weaponImg} className="w-[100%] " />
         </CharacterSectionRound>

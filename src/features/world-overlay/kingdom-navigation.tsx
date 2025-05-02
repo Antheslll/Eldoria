@@ -17,11 +17,11 @@ const KingdomNavigation = ({
 }: KingdomNavigationProps) => {
   return (
     <div
-      className="w-[3.5vw] h-[3.5vw] bg-white rounded-[18%] centered-positioning cursor-pointer"
+      className="lg:w-[3.5vw] lg:h-[3.5vw] md:w-[5vw] md:h-[5vw] sm:w-[4vw] sm:h-[4vw] w-[8vw] h-[8vw] bg-white rounded-[18%] centered-positioning cursor-pointer"
       onClick={() => handlePreview(nav)}
       style={{ backgroundColor: `${preview === nav ? color : "white"}` }}
     >
-      {icon}
+      <span className="md:scale-[100%] sm:scale-[60%] scale-[90%]">{icon}</span>
     </div>
   );
 };

@@ -70,14 +70,42 @@ h3 {
   );
 }
 
-:root {
-  --card-height: 300px;
-  --card-width: calc(var(--card-height) / 1.5);
+/* @media (min-width: 1280px) {
+  :root {
+    --card-height: 20vw;
+    --card-width: calc(var(--card-height) / 1.5);
+  }
 }
 
+@media (max-width: 1279px) {
+  :root {
+    --card-height: 270px;
+    --card-width: calc(var(--card-height) / 1.5);
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --card-height: 260px;
+    --card-width: calc(var(--card-height) / 1.5);
+  }
+}
+@media (min-width: 640px) {
+  :root {
+    --card-height: 230px;
+    --card-width: calc(var(--card-height) / 1.5);
+  }
+}
+@media (max-width: 640px) {
+  :root {
+    --card-height: 150px;
+    --card-width: calc(var(--card-height) / 1.5);
+  }
+} */
+
 .card {
-  width: var(--card-width);
-  height: var(--card-height);
+  /* width: var(--card-width);
+  height: var(--card-height); */
   position: relative;
   display: flex;
   justify-content: center;

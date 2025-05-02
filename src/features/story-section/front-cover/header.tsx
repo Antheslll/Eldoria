@@ -7,7 +7,7 @@ const StoryHeaderCover = ({ text }: StoryHeaderCoverProps) => {
     <div className="w-full centered-positioning">
       <h1
         className={`font-pirata text-white ${
-          text === "The End" ? "text-[70px]" : "text-[45px]"
+          text === "The End" ? "text-[10vw]" : "text-[4vw]"
         }`}
       >
         {text}

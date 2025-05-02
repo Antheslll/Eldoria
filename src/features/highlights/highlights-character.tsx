@@ -23,7 +23,7 @@ const HighlightCharacter = ({
           : isHover === "story"
           ? "highlight-x-hover slide-clip-custom-non-hover w-[24%] ml-[12%]"
           : "highlight-x-hover w-[35%] slide-clip-custom ml-[24%]"
-      } h-[500px] absolute  bg-red-200 z-30 bg-[url("/assets/home-page-assets/highlight-section-assets/character-highlights-image.png")] bg-cover bg-center`}
+      } xl:h-[clamp(500px,80vh,800px)] absolute  bg-red-200 z-30 bg-[url("/assets/home-page-assets/highlight-section-assets/character-highlights-image.png")] bg-cover bg-center`}
       onMouseEnter={() => {
         setIsHover("character");
         handleGrab("world");
@@ -42,17 +42,17 @@ const HighlightCharacter = ({
             : isHover === "story"
             ? "slide-clip-custom-non-hover w-full"
             : "w-full slide-clip-custom "
-        } h-[500px] radial-gradient`}
+        } xl:h-[clamp(500px,80vh,800px)] lg:h-[clamp(500px,70vh,800px)] radial-gradient`}
       >
         <div
           className={`${
             isHover === "character" ? "highlights-text-background" : ""
-          } w-full h-[500px] pt-3 flex justify-center items-end`}
+          } xl:h-[clamp(500px,80vh,800px)] lg:h-[clamp(500px,70vh,800px)] pt-3 flex justify-center items-end`}
         >
-          <div className="w-[70%] h-[130px] ml-[-15.5%]">
+          <div className="w-[70%] xl:h-[clamp(130px,15vh,300px)] lg:h-[clamp(130px,15vh,300px)] ml-[-15.5%]">
             {(isHover === "character" || isHover === "") && (
               <h4
-                className={` text-white text-[30px] font-pirata text-center ${
+                className={` text-white xl:text-[3vw] lg:text-[2.5vw] font-pirata text-center ${
                   hoverGrab === "world" ||
                   hoverGrab === "" ||
                   hoverGrab === "story"
@@ -68,14 +68,14 @@ const HighlightCharacter = ({
               <h4
                 className={`${
                   hoverGrab !== "character" ? "fade-in" : "fade-out"
-                } text-white text-[30px] font-pirata text-center rotate-285 ml-[20px] `}
+                } text-white xl:text-[2.5vw] lg:text-[2.5vw] font-pirata text-center rotate-285 ml-[20px] `}
               >
                 Legend & Souls
               </h4>
             )}
 
             {isHover === "character" && (
-              <p className="text-white text-center text-[10px]">
+              <p className="text-white text-center xl:text-[0.8vw] lg:text-[0.8vw]">
                 Behind the burning eyes lies a story of scars, ambition, and
                 promises left unfulfilled. They are not just figures—they are
                 the echoes of blood that still beats within the shadows of

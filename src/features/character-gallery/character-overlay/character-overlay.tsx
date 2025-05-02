@@ -5,10 +5,9 @@ import { dravakhorHero } from "../../../data/dravakhor-hero";
 import { riftlandHero } from "../../../data/riftland-hero";
 import { useState } from "react";
 import CharacterDescriptionSection from "./character-description-section";
-import CharacterWeaponSection from "./character-weapon-section";
-import CharacterDetailsSection from "./character-details-section";
-import CharacterSkillSection from "./character-skill-section";
 import { useCharacterData } from "../../../hooks/useCharacterData";
+import useWindowSize from "../../../hooks/useWindowSize";
+import CharacterInfoPanel from "./character-info-panel";
 
 interface CharacterOverlayPropsType {
   closeOverlay: () => void;
@@ -23,6 +22,7 @@ const CharacterOverlay = ({
 }: CharacterOverlayPropsType) => {
   const [skillHover, setSkillHover] = useState("");
   const [overlayAppear, setOverlayAppear] = useState(false);
+  const { width } = useWindowSize();
 
   const handleSkillHover = (skill: string) => {
     setSkillHover(skill);
@@ -90,13 +90,13 @@ const CharacterOverlay = ({
 
   return (
     <div
-      className="w-full h-full bg-black/90 fixed z-50 flex justify-center items-center"
+      className="w-full xl:h-[100vh] bg-black/90 fixed z-50 flex justify-center items-center"
       onClick={() => {
         closeOverlay();
       }}
     >
       <div
-        className={`w-[90%] h-[550px] ${
+        className={`w-[90%] lg:h-[80vh] ${
           !overlayAppear ? "opacity-0" : "opacity-100 fade-in-5ms"
         } bg-cover bg-center`}
         style={{
@@ -105,9 +105,9 @@ const CharacterOverlay = ({
         }}
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="w-full h-[550px] bg-[8B0000]/50">
+        <div className="w-full lg:h-[80vh] bg-[8B0000]/50">
           <div
-            className={`w-full h-[550px] bg-black/70 grid grid-cols-[35%_30%_35%]`}
+            className={`w-full lg:h-[80vh] bg-black/70 grid grid-cols-[35%_30%_35%]`}
           >
             <CharacterDescriptionSection
               heroName={heroName || ""}
@@ -115,31 +115,23 @@ const CharacterOverlay = ({
               description={description || ""}
             />
             <div className="flex justify-center items-center">
-              <img src={previewImage} className="w-[70%]" />
+              <img src={previewImage} className="lg:w-[70%]" />
             </div>
-            <div className=" flex justify-center items-center">
-              <div className="w-[80%] h-[400px] grid gap-y-[10px] grid-rows-[75px_230px_75px] ">
-                <CharacterWeaponSection
-                  weaponImg={weaponImg || ""}
-                  weaponName={weaponName || ""}
-                />
-                <CharacterDetailsSection
-                  skillHover={skillHover}
-                  hp={hp}
-                  level={level}
-                  power={power}
-                  st={st}
-                  def={def}
-                  skillIconPreviewing={skillIconPreviewing || ""}
-                  showSkillDescription={showSkillDescription || ""}
-                />
-                <CharacterSkillSection
-                  skillIconList={skillIconList}
-                  handleSkillHover={handleSkillHover}
-                  handleSkillLeave={handleSkillLeave}
-                />
-              </div>
-            </div>
+            <CharacterInfoPanel
+              weaponImg={weaponImg || ""}
+              weaponName={weaponName || ""}
+              skillHover={skillHover}
+              hp={hp}
+              level={level}
+              power={power}
+              st={st}
+              def={def}
+              skillIconPreviewing={skillIconPreviewing || ""}
+              showSkillDescription={showSkillDescription || ""}
+              skillIconList={skillIconList}
+              handleSkillHover={handleSkillHover}
+              handleSkillLeave={handleSkillLeave}
+            />
           </div>
         </div>
       </div>

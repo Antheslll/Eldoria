@@ -11,7 +11,7 @@ const CharacterDescriptionSection = ({
 }: CharacterDescriptionSectionProps) => {
   return (
     <div className=" flex justify-center items-center">
-      <div className="character-description-background text-white w-[80%] h-[400px] pt-5 pl-3 pr-3">
+      <div className="character-description-background text-white w-[80%] lg:h-[53vh] pt-5 pl-3 pr-3">
         <h2 className="text-[30px]">{heroName}</h2>
         <h3 className="text-[15px]">{heroSurname}</h3>
         <br />

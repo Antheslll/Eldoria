@@ -29,7 +29,7 @@ const NavigationMenu = ({
   handleOffKey,
 }: NavigationMenuProps) => {
   return (
-    <div className="w-auto h-[70px] flex justify-center items-end gap-6">
+    <div className="w-auto h-[70px] flex justify-center  xl:flex-row lg:flex-row sm:flex-row lg:items-end lg:gap-6 sm:gap-8 flex-col md:flex-col items-center md:gap-4 gap-1">
       <NavigationButton
         pages={navName1}
         anchor={anchor1}
@@ -87,7 +87,7 @@ const NavigationButton = ({
       <button
         className={`${
           isHover ? "relative z-60 bg-white/20" : ""
-        } w-[120px] h-[35px] font-pirata border-2 border-white text-white rounded-[8px] cursor-pointer `}
+        }  xl:w-[11vw] xl:h-[3vw] xl:text-[1.3vw] lg:w-[11vw] lg:h-[3vw] lg:text-[1.3vw] sm:w-[13vw] sm:h-[4vw] sm:text-[1.4vw] md:w-[40vw] md:h-[5vw] md:text-[2.5vw] w-[50vw] h-[6vw] text-[2.8vw] font-pirata border-2 border-white text-white lg:rounded-[8px] md:rounded-[8px] rounded-[6px] cursor-pointer `}
         onMouseEnter={() => {
           handleSetKey(theKey);
           setIsHover(true);
@@ -102,3 +102,5 @@ const NavigationButton = ({
     </Link>
   );
 };
+
+export { NavigationButton };

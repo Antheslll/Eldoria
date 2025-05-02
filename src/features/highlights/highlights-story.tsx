@@ -22,7 +22,7 @@ const HighlightStory = ({
           : isHover === "story"
           ? "highlight-x-hover w-[60%] slide-clip-custom-hover ml-[23%]"
           : "highlight-x-hover w-[35%] slide-clip-custom ml-[48%]"
-      }  h-[500px] absolute  bg-blue-200 z-20 bg-[url("/assets/home-page-assets/highlight-section-assets/story-highlights-image.png")] bg-cover bg-center`}
+      }  xl:h-[clamp(500px,80vh,800px)] lg:h-[clamp(500px,70vh,800px)] absolute  bg-blue-200 z-20 bg-[url("/assets/home-page-assets/highlight-section-assets/story-highlights-image.png")] bg-cover bg-center`}
       onMouseEnter={() => {
         setIsHover("story");
         handleGrab("world");
@@ -39,17 +39,17 @@ const HighlightStory = ({
             : isHover === "story"
             ? "slide-clip-custom-hover"
             : "w-full slide-clip-custom "
-        }  h-[500px] radial-gradient `}
+        }  xl:h-[clamp(500px,80vh,800px)] lg:h-[clamp(500px,70vh,800px)] radial-gradient `}
       >
         <div
           className={`${
             isHover === "story" ? "highlights-text-background" : ""
-          } w-full h-[500px] pt-3 flex justify-center items-end`}
+          } w-full xl:h-[clamp(500px,80vh,800px)] lg:h-[clamp(500px,70vh,800px)]  pt-3 flex justify-center items-end`}
         >
-          <div className="w-[70%] h-[130px] ml-[-15.5%]">
+          <div className="w-[70%] xl:h-[clamp(130px,15vh,300px)] lg:h-[clamp(130px,15vh,300px)] ml-[-15.5%]">
             {(isHover === "story" || isHover === "") && (
               <h4
-                className={` text-white text-[30px] font-pirata text-center ${
+                className={` text-white xl:text-[3vw] lg:text-[2.5vw] font-pirata text-center ${
                   hoverGrab === "character" ||
                   hoverGrab === "" ||
                   hoverGrab === "world"
@@ -65,14 +65,14 @@ const HighlightStory = ({
               <h4
                 className={`${
                   hoverGrab !== "story" ? "fade-in" : "fade-out"
-                } w-full text-white text-[30px] font-pirata text-center rotate-285 ml-[20px] `}
+                } w-full text-white xl:text-[2.5vw] lg:text-[2.5vw] font-pirata text-center rotate-285 ml-[20px] `}
               >
                 Tales of Etheria
               </h4>
             )}
 
             {isHover === "story" && (
-              <p className="text-white text-center text-[10px]">
+              <p className="text-white text-center xl:text-[0.8vw] lg:text-[0.8vw]">
                 The holy sword, forged from shattered stars, waits for the soul
                 worthy to wield it. Within the Celestial Void, its story echoes,
                 awaiting a fate that will shatter eternity. Those who dare seek

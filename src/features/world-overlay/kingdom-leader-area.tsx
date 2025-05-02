@@ -12,7 +12,7 @@ const KingdomLeaderArea = ({ charAssets, color }: KingdomLeaderProps) => {
         className="w-[80%] z-20"
       />
       <div
-        className="w-[26vw] h-[30px] rounded-[70%] mt-[390px]  absolute z-10"
+        className="sm:w-[26vw] w-[45vw] h-[30px] rounded-[70%] xl:mt-[clamp(390px,55vh,600px)] lg:mt-[clamp(300px,45vh,400px)] sm:mt-[clamp(200px,57vh,230px)] mt-[clamp(200px,57.5vh,240px)] absolute z-10"
         style={{ backgroundColor: `${color}` }}
       ></div>
     </div>

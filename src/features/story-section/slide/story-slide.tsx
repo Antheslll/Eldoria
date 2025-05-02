@@ -29,7 +29,7 @@ const StorySlide = ({
       } w-full h-full bg-cover bg-center transition-all duration-1000 ease-in-out`}
       style={{ backgroundImage: `url(${backgroundImg})` }}
     >
-      <div className="w-full h-full bg-black/30 grid grid-rows-[20vh_40vh_40vh]">
+      <div className="w-full lg:h-full bg-black/30 grid lg:grid-rows-[20vh_40vh_40vh]">
         <LogoOnSlide />
         <div></div>
         <StoryText

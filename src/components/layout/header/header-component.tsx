@@ -86,24 +86,24 @@ const HeaderComponent = ({
     <>
       <OverlayNavigation imgSrc={src} text={text} />
       <div
-        className="w-full lg:h-[600px] bg-cover"
+        className="w-[100vw] xl:w-[100vw] xl:h-[100vh] sm:w-[100vw] lg:h-[100vh] md:w-[100vw] md:h-[clamp(600px,100vh,1500px)] sm:h-[clamp(600px,100vh,1000px)] h-[100vh] bg-cover bg-center"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        <div className="w-full lg:h-[600px] bg-black/50 flex justify-center pt-[90px]">
-          <div className="w-[70%] lg:h-[500px] grid grid-rows-[70px_100px_30px_50px_100px_100px_50px]">
+        <div className="w-[100vw] lg:h-[100vh] md:h-[clamp(600px,100vh,1500px)] sm:h-[clamp(600px,100vh,800px)] h-[100vh] bg-black/50 flex justify-center pt-[90px]">
+          <div className="lg:w-[80vw] md:w-[80vw] h-auto grid  xl:grid-rows-[clamp(30px,10vh,150px)_clamp(70px,15vh,150px)_6vh_10vh_15vh_10vh_7vh] lg:grid-rows-[10vh_13vh_6vh_10vh_15vh_10vh_7vh] md:grid-rows-[12vh_9vh_4vh_12vh_15vh_1vh_2vh] sm:grid-rows-[35vh_17vh_8vh_clamp(80px,20vh,200px)_clamp(100px,35vh,200px)_2vh_1vh] grid-rows-[13vh_5vh_4vh_8vh_13vh_2vh_1vh]">
             <div className="flex justify-center">
               <img
                 src="/assets/eldoria-logo-assets/Eldoria Logo.png"
                 alt="logo eldoria"
-                className="w-[70px] "
+                className=" xl:w-[5vw] xl:h-[5vw] lg:w-[7vw] lg:h-[7vw] md:w-[15vw] md:h-[15vw] sm:w-[15vw] sm:h-[15vw] w-[20vw] h-[20vw]"
               />
             </div>
-            <h1 className="text-white text-center md:text-[3.8rem] lg:text-[4rem]">
+            <h1 className="text-white text-center xl:text-[5vw] sm:text-[6vw] md:text-[7vw] lg:text-[clamp(20px,5vw,100px)] text-[7vw]">
               {header}
             </h1>
             <LineStyle />
-            <div className="w-full flex justify-center">
-              <h3 className="w-[70%] text-[13px] text-center text-white">
+            <div className="w-full flex justify-center xl:pl-[4vw] xl:pr-[4vw] lg:pl-[4vw] md:pl-[0.5vw] lg:pr-[4vw]  md:pr-[0.5vw] pl-[2vw] pr-[2vw] sm:pl-[7vw] sm:pr-[7vw]">
+              <h3 className="w-[70%] lg:text-[1.1vw] md:text-[1.3vw] sm:text-[1.3vw] text-[1.6vw] text-center text-white">
                 {subheader}
               </h3>
             </div>
