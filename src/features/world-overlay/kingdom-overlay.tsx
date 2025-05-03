@@ -99,7 +99,7 @@ const KingdomOverlay = ({
         </div>
       </div>
     );
-  } else if (width > 768) {
+  } else if (width >= 768) {
     return (
       <div
         className="w-[100%] h-[100vh] fixed z-60 bg-black/50 centered-positioning"

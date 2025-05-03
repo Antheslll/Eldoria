@@ -50,7 +50,7 @@ const WorldPage = () => {
           isKingdom={isKingdom}
         />
       )}
-      <main className="w-full xl:h-[130vh] lg:h-[100vh] md:h-[80vh] sm:h-[130vh] h-[50vh] world-background grid xl:grid-rows-[15vh_100vh] lg:grid-rows-[15vh_80vh] md:grid-rows-[clamp(50px,5vh,300px)_50vh] sm:grid-rows-[15vh_130vh] grid-rows-[10vh_35vh]">
+      <main className="w-full xl:h-[130vh] lg:h-[100vh] md:h-[80vh] sm:h-[150vh] h-[50vh] world-background grid xl:grid-rows-[15vh_100vh] lg:grid-rows-[15vh_80vh] md:grid-rows-[clamp(50px,5vh,300px)_50vh] sm:grid-rows-[15vh_130vh] grid-rows-[10vh_35vh]">
         <div className="flex justify-center items-end">
           <h1 className="underline text-center text-white xl:text-[clamp(20px,3.5vw,60px)] lg:text-[clamp(15px,3vw,60px)] md:text-[clamp(15px,3vw,60px)] sm:text-[clamp(15px,3vw,60px)] text-[clamp(10px,3.5vw,60px)] fell-english">
             The Four Kingdoms: Born from the Celestial Void

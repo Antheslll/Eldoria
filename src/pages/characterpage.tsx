@@ -32,6 +32,18 @@ const CharacterPage = () => {
   //   return cleanup;
   // }, []);
 
+  {
+    /* 
+scrollDistance > 550 && scrollDistance < 1392
+        ? "character-valdenar-background"
+        : scrollDistance > 1392 && scrollDistance < 2454
+        ? "character-sylvara-background"
+        : scrollDistance > 2454 && scrollDistance < 3454
+        ? "character-nirvalis-background"
+        : scrollDistance > 3454 && scrollDistance < 4524
+        ? "character-dravakhor-background"
+        : "character-background" */
+  }
   return (
     <>
       {isOverlayOpen && (
@@ -41,18 +53,8 @@ const CharacterPage = () => {
           searchParams={searchParams}
         />
       )}
-      {/* 
-scrollDistance > 550 && scrollDistance < 1392
-            ? "character-valdenar-background"
-            : scrollDistance > 1392 && scrollDistance < 2454
-            ? "character-sylvara-background"
-            : scrollDistance > 2454 && scrollDistance < 3454
-            ? "character-nirvalis-background"
-            : scrollDistance > 3454 && scrollDistance < 4524
-            ? "character-dravakhor-background"
-            : "character-background" */}
       <main
-        className={`w-full xl:h-[clamp(5000px,820vh,6500px)] xl:pt-[20vh] lg:h-[clamp(4800px,570vh,5300px)] sm:h-[clamp(4600px,1300vh,9000px)] lg:pt-[10vh] md:h-[clamp(5900px,470vh,6200px)] h-[clamp(4600px,530vh,5000px)] pt-[2vh] pb-5 duration-500 transition-all character-background`}
+        className={`w-full xl:h-[clamp(5000px,820vh,6500px)] xl:pt-[20vh] lg:h-[clamp(4800px,570vh,5300px)] sm:h-[clamp(5000px,1350vh,9000px)] lg:pt-[10vh] md:h-[clamp(5900px,470vh,6200px)] h-[clamp(4600px,530vh,5000px)] pt-[2vh] pb-5 duration-500 transition-all character-background`}
       >
         <CharacterAlbum
           title="Guardian of The Light of Valdenar"

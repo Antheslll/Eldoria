@@ -19,7 +19,7 @@ export const valdenarHero = [
       "Infernal Shield: Perisai api melindungi pengguna, membakar siapa pun yang berani menyerang.",
     description:
       "Pyroclasmic Fury adalah pedang legendaris terbuat dari obsidian hitam, dengan aliran lava yang mengalir di sepanjang bilahnya. Pedang ini menempa Kael Thorneblade sejak usia muda, yang merupakan hasil pernikahan antara seorang dwarf dan manusia, memberikan kekuatan api yang mematikan dan simbol keadilan. Setiap ayunan pedang ini menghancurkan musuh dengan ledakan api, mencerminkan tekad Kael untuk melindungi kerajaan Valdrenar dengan kekuatan destruktif yang tak tertandingi.",
-    color: "#FF4500",
+    color: "rgba(255, 69, 0, 0.2)",
     //mulai asset image
     cardImg:
       "/assets/character-page-assets/character-assets/kael-Thorneblade-assets/card.png",
@@ -66,7 +66,7 @@ export const valdenarHero = [
       "Divine Sight: Memberikan penglihatan ilahi untuk mendeteksi musuh tersembunyi.",
     description:
       "Seren Fletchwynd adalah pemanah ulung yang dibesarkan di pegunungan, anak seorang pemahat batu yang menguasai seni memanah demi bertahan hidup. Senjatanya, Radiant Bow, terbuat dari kayu bercahaya yang dipadukan dengan kristal suci, melepaskan panah cahaya yang mampu menghancurkan musuh dari jarak jauh. Ia berdiri sebagai penjaga perbatasan utara Valdrenar, melindungi kerajaannya dengan kekuatan cahaya murni.",
-    color: "#FFD700",
+    color: "rgba(255, 215, 0, 0.2)",
 
     //mulai asset image
     cardImg:
@@ -114,7 +114,7 @@ export const valdenarHero = [
       "Mirage of Light: Ilusi cahaya membingungkan musuh dan membuat mereka rentan.",
     description:
       "Velka Cindergaze, seorang penyihir senior dari Menara Sulur Bara, kehilangan penglihatan di masa kecil namun memperoleh kemampuan untuk 'melihat' melalui gelombang cahaya suci. Menggunakan kekuatan matahari yang bersinar terang, ia memimpin pertahanan sihir selama pengepungan Valdrenar. Solar Scepter, tongkat suci yang dipenuhi energi matahari, mengarahkannya untuk melindungi kerajaan dengan kekuatan cahaya murni.",
-    color: "#FFA500",
+    color: "rgba(255, 165, 0, 0.2)",
 
     //mulai asset image
     cardImg:
@@ -162,7 +162,7 @@ export const valdenarHero = [
       "Divine Fade: Menghilang dalam sekejap, menghindari serangan musuh.",
     description:
       "Ravik Flameveil adalah mantan pencuri yang dilatih oleh pasukan rahasia kerajaan, menguasai teknik ilusi cahaya dan pergerakan siluman yang tak terlihat. Dengan Luminous Dagger, senjata kecil namun bercahaya, ia menghancurkan ancaman dari dalam kerajaan Valdrenar dengan kecepatan dan kecerdikan. Menggunakan kekuatan cahaya yang disalurkan melalui senjatanya, ia mengaburkan jejaknya dalam kegelapan.",
-    color: "#F5DEB3",
+    color: "rgba(245, 222, 179, 0.2)",
     //mulai asset image
     cardImg:
       "/assets/character-page-assets/character-assets/ravik-flameveil/card.png",
@@ -210,7 +210,7 @@ export const valdenarHero = [
 
     description:
       "Doran Ashpike adalah pahlawan garis depan dalam Perang Gunung Hitam yang memimpin serangan dengan Spear of Dawn, tombak suci yang ditempa dengan cahaya matahari pertama. Tombaknya mampu menembus pertahanan musuh dan menghancurkan dengan energi cahaya yang murni. Sebagai pemimpin dalam formasi tombak berapi, Doran melambangkan keberanian dan kekuatan kerajaan Valdrenar dalam menghadapi ancaman.",
-    color: "#FFF8DC",
+    color: "rgba(255, 248, 220, 0.2)",
     //mulai asset image
     cardImg:
       "/assets/character-page-assets/character-assets/doran-asphike/card.png",

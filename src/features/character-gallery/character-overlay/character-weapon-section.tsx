@@ -9,16 +9,20 @@ const CharacterWeaponSection = ({
   weaponName,
 }: CharacterWeaponSectionProps) => {
   return (
-    <div className="bg-black/30 grid grid-cols-[30%_70%]">
-      <div className="w-full lg:h-[75px] flex justify-center items-center">
+    <div className="bg-black/30 grid grid-cols-[30%_70%] sm:h-auto h-[10vh]">
+      <div className="w-full lg:h-[12vh] md:h-[7vh] sm:h-[14vh] h-[10vh] flex justify-center items-center ">
         <CharacterSectionRound>
           <img src={weaponImg} className="w-[100%] " />
         </CharacterSectionRound>
       </div>
       <div className=" flex items-center">
         <div className="leading-[1.25]">
-          <p className="text-[10px] roboto-bold text-white">Weapon</p>
-          <h2 className="text-[25px] text-white">{weaponName}</h2>
+          <p className="lg:text-[0.9vw] md:text-[1.5vw] sm:text-[1vw] text-[2vw] roboto-bold text-white">
+            Weapon
+          </p>
+          <h2 className="lg:text-[1.8vw] md:text-[2.5vw] sm:text-[2vw] text-[3.5vw] text-white">
+            {weaponName}
+          </h2>
         </div>
       </div>
     </div>

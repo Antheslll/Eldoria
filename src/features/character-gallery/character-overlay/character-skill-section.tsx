@@ -15,10 +15,12 @@ const CharacterSkillSection = ({
   handleSkillLeave,
 }: CharacterSkillSectionProps) => {
   return (
-    <div className="bg-black/30 grid grid-cols-[25%_25%_25%_25%]">
+    <div className="bg-black/30 grid grid-cols-[25%_25%_25%_25%] md:h-[80%] h-[80%] sm:auto lg:auto">
       <div className="flex justify-center items-center">
         <CharacterSectionRound>
-          <h4 className="text-[30px] text-white font-grover">Skills</h4>
+          <h4 className="lg:text-[2.5vw] md:text-[4vw] sm:text-[2.6vw] text-[7vw] text-white font-grover">
+            Skills
+          </h4>
         </CharacterSectionRound>
       </div>
       {skillIconList.map((skill) => (

@@ -19,7 +19,7 @@ export const nirvalisHero = [
       "Crystal Veil: Tirai kristal melindungi dari serangan dan memperlambat musuh.",
     description:
       "Ilyra Glacias adalah putri penyihir dari Biara Salju yang memiliki kekuatan untuk mengendalikan es dan cahaya. Ia bertugas menjaga Kuil Cahaya Utara dari ancaman bayangan yang mencoba merusak kedamaian. Keindahan dan kekuatan esnya membuatnya dikenal di seluruh dunia sebagai sosok yang penuh dengan kebijaksanaan dan kekuatan luar biasa.",
-    color: "#00BFFF",
+    color: "rgba(0, 191, 255, 0.2)",
     //mulai asset image
     cardImg:
       "/assets/character-page-assets/character-assets/ilyra-glacias/card.png",
@@ -66,7 +66,7 @@ export const nirvalisHero = [
       "Blizzard Charge: Serangan berkecepatan tinggi disertai badai salju membekukan jalur serangan.",
     description:
       "Cain Snowrift adalah komandan pasukan kavaleri es dari Nirvalis, yang dikenal karena keberaniannya melawan musuh. Menunggangi serigala salju raksasa, ia tak pernah mundur dari pertempuran, melindungi wilayahnya dari serangan musuh dengan keberanian yang tak terbatas.",
-    color: "#00BFFF",
+    color: "rgba(0, 191, 255, 0.2)",
     //mulai asset image
     cardImg:
       "/assets/character-page-assets/character-assets/cain-snowrift/card.png",
@@ -113,7 +113,7 @@ export const nirvalisHero = [
       "Moonlit Precision: Akurasi sempurna saat menyerang di bawah cahaya bulan.",
     description:
       "Siren Yvell adalah pemburu malam dari klan tundra, dikenal dengan kemampuan untuk membidik dengan kecepatan dan presisi. Panahnya datang dengan senyap, dingin seperti salju, menghantam target sebelum mereka menyadari kehadirannya, menjaga keseimbangan di wilayah beku yang sunyi.",
-    color: "#A9A9A9",
+    color: "rgba(169, 169, 169, 0.2)",
     //mulai asset image
     cardImg:
       "/assets/character-page-assets/character-assets/siren-yvell/card.png",
@@ -161,7 +161,7 @@ export const nirvalisHero = [
 
     description:
       "Ardos Freezebane adalah prajurit es yang ditempa dari puncak gunung Nirvalis. Ia dikenal sebagai pelindung desa-desa terpencil yang dihantui oleh raksasa salju dan makhluk beku lainnya. Senjatanya, Borealis Lance, memancarkan kekuatan es yang mampu merobek pertahanan musuh.",
-    color: "#B0E0E6",
+    color: "rgba(176, 224, 230, 0.2)",
     //mulai asset image
     cardImg:
       "/assets/character-page-assets/character-assets/ardos-freezebane/card.png",
@@ -208,7 +208,7 @@ export const nirvalisHero = [
       "Ice Dagger Rain: Hujan belati es menusuk dan membekukan banyak musuh sekaligus.",
     description:
       "Lyth Ravenhush adalah seorang pembunuh yang menghilang dalam kabut salju, bergerak secepat bayangan. Ia dikenal karena kemampuannya membunuh dalam sekali serang dan menghilang begitu cepat. Selama Perang Cahaya, ia menjadi sosok yang ditakuti di medan pertempuran salju.",
-    color: "#A9A9A9",
+    color: "rgba(169, 169, 169, 0.5)9",
     //mulai asset image
     cardImg:
       "/assets/character-page-assets/character-assets/lyth-ravenhush/card.png",

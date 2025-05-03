@@ -1,3 +1,4 @@
+import useWindowSize from "../../../hooks/useWindowSize";
 import CharacterDetailsSection from "./character-details-section";
 import CharacterSkillSection from "./character-skill-section";
 import CharacterWeaponSection from "./character-weapon-section";
@@ -34,9 +35,11 @@ const CharacterInfoPanel = ({
   handleSkillHover,
   handleSkillLeave,
 }: CharacterInfoPanelProps) => {
+  const { width } = useWindowSize();
   return (
-    <div className=" flex justify-center items-center">
-      <div className="w-[80%] lg:h-[clamp(600px,53vh,700px)] grid gap-y-[10px] lg:grid-rows-[10vh_30vh_10vh] ">
+    <div className=" flex justify-center items-center ">
+      {/* h-[7vh] */}
+      <div className="sm:w-[80%] w-[95%] lg:h-[60vh] md:h-[30vh] sm:h-[70vh] h-[30vh] grid gap-y-[10px] lg:grid-rows-[12vh_35vh_10vh] md:grid-rows-[7vh_23vh] sm:grid-rows-[14vh_40vh_10vh]">
         <CharacterWeaponSection weaponImg={weaponImg} weaponName={weaponName} />
         <CharacterDetailsSection
           skillHover={skillHover}
@@ -48,11 +51,20 @@ const CharacterInfoPanel = ({
           skillIconPreviewing={skillIconPreviewing}
           showSkillDescription={showSkillDescription}
         />
-        <CharacterSkillSection
-          skillIconList={skillIconList}
-          handleSkillHover={handleSkillHover}
-          handleSkillLeave={handleSkillLeave}
-        />
+        {width > 1024 && (
+          <CharacterSkillSection
+            skillIconList={skillIconList}
+            handleSkillHover={handleSkillHover}
+            handleSkillLeave={handleSkillLeave}
+          />
+        )}
+        {width > 640 && width < 768 && (
+          <CharacterSkillSection
+            skillIconList={skillIconList}
+            handleSkillHover={handleSkillHover}
+            handleSkillLeave={handleSkillLeave}
+          />
+        )}
       </div>
     </div>
   );

@@ -20,7 +20,7 @@ const SkillIcon = ({
       >
         <div className="flex justify-center">
           <div
-            className="w-[45px] h-[45px] bg-white border-2 border-white rounded-full bg-cover bg-center"
+            className="lg:w-[3vw] lg:h-[3vw] md:w-[8vw] md:h-[8vw] sm:w-[3vw] sm:h-[3vw] w-[8vw] h-[8vw] bg-white border-2 border-white rounded-full bg-cover bg-center"
             style={{
               backgroundImage: backgroundImg,
             }}
@@ -28,7 +28,7 @@ const SkillIcon = ({
         </div>
 
         <div className="flex justify-center">
-          <span className=" text-white text-center text-[8px] fell-english">
+          <span className=" text-white text-center lg:text-[0.6vw] md:text-[2vw] sm:text-[0.7vw] text-[2.3vw] fell-english">
             {skillName}
           </span>
         </div>

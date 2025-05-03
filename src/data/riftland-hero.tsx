@@ -19,7 +19,7 @@ export const riftlandHero = [
       "Void Piercer: Serangan tajam menembus kehampaan, langsung menghantam inti musuh.",
     description:
       "Zharoth adalah pembunuh legendaris yang kehilangan tubuh aslinya setelah terperangkap di antara dimensi. Kini, dia menggunakan kekuatan ruang untuk menyerang musuh tanpa terlihat, dan membidik dengan akurasi yang tak tertandingi. Keberadaannya tak lagi sepenuhnya nyata, dan dia muncul dari dimensi yang patah. Zharoth menjelajahi Riftlands untuk mencari cara mengembalikan dirinya ke bentuk fisik sempurna, namun tak segan-segan menghancurkan siapapun yang menghalanginya.",
-    color: "#6A5ACD",
+    color: "rgba(106, 90, 205, 0.2)",
     //mulai asset image
     cardImg: "/assets/character-page-assets/character-assets/zharoth/card.png",
     cardImgHover:
@@ -65,7 +65,7 @@ export const riftlandHero = [
       "Soul Drain: Menyedot energi jiwa musuh untuk memperkuat diri sendiri.",
     description:
       "Karthos adalah seorang penyihir dari masa lalu yang terjebak dalam dunia yang terdistorsi oleh kekuatan gelap. Ia adalah ahli dalam manipulasi energi dari dimensi gelap dan telah menjual jiwanya untuk memperoleh pengetahuan terlarang. Dalam pencariannya untuk kebangkitan, dia memanipulasi realitas itu sendiri, mengubah ruang dan waktu untuk keuntungannya. Semakin dia menggunakan kekuatan tersebut, semakin dia terjerumus ke dalam kegelapan.",
-    color: "#2F4F4F",
+    color: "rgba(47, 79, 79, 0.2)",
     //mulai asset image
     cardImg: "/assets/character-page-assets/character-assets/karthos/card.png",
     cardImgHover:
@@ -111,7 +111,7 @@ export const riftlandHero = [
       "Rupture Call: Memanggil gempa untuk membelah tanah dan menghancurkan musuh.",
     description:
       "Gornak adalah ksatria yang terlahir dari tanah yang terkoyak, dengan tubuh yang keras seperti batu. Ia menguasai elemen bumi dan menggunakan kekuatannya untuk menghancurkan dan mengendalikan tanah. Dulunya, ia adalah penjaga kerajaan yang hancur dalam pertempuran besar, tetapi kini ia berkelana di dunia yang telah retak, mencari cara untuk merebut kembali kuasanya di dunia yang lebih luas. Keberadaannya yang seolah tak terkalahkan membuatnya menjadi musuh yang menakutkan.",
-    color: "#4B4B4B",
+    color: "rgba(75, 75, 75, 0.2)",
     //mulai asset image
     cardImg:
       "/assets/character-page-assets/character-assets/gornak-earthshatter/card.png",
@@ -158,7 +158,7 @@ export const riftlandHero = [
       "Void Rip: Merobek ruang kosong, menciptakan luka dimensional.",
     description:
       "Xyros adalah pembunuh yang terkenal karena kemampuan menghilangnya dalam bayangan, menjadikannya pembunuh yang tak dapat ditangkap. Lahir dari keturunan pembunuh bayangan, ia terlahir dengan kemampuan unik untuk melintasi dunia bayangan, menghilang seolah tak terlihat, dan merenggut nyawa musuh dalam sekejap. Xyros berkelana di Riftlands dengan tujuan untuk memusnahkan siapa saja yang mencoba menghalangi rencananya yang gelap.",
-    color: "#3B3B3B",
+    color: "rgba(59, 59, 59, 0.2)",
     //mulai asset image
     cardImg: "/assets/character-page-assets/character-assets/xyros/card.png",
     cardImgHover:
@@ -204,7 +204,7 @@ export const riftlandHero = [
       "Riftwalk: Melangkah menembus celah ruang untuk berpindah cepat.",
     description:
       "Thalgar adalah entitas yang terperangkap di antara realitas setelah eksperimen magis yang gagal di Riftlands. Tidak memiliki asal usul yang jelas, ia mengklaim dirinya sebagai 'Prajurit Kosmik' yang melintasi dunia dan waktu. Dengan kemampuan untuk mengubah hukum alam dan memanipulasi realitas itu sendiri, Thalgar adalah musuh yang sangat kuat dan tak dapat dipahami. Semua yang ada di sekitarnya akan runtuh dengan mudah jika ia berkehendak demikian.",
-    color: "#5F4B8B",
+    color: "rgba(95, 75, 139, 0.2)",
     //mulai asset image
     cardImg: "/assets/character-page-assets/character-assets/thalgar/card.png",
     cardImgHover:
@@ -250,7 +250,7 @@ export const riftlandHero = [
       "Gale Slice: Tebasan angin tajam memotong banyak musuh sekaligus.",
     description:
       "Voras adalah prajurit dari tanah Riftlands yang dibesarkan oleh badai dan angin yang tak terduga. Ia sangat terlatih dalam menggunakan tombak yang diperkuat dengan kekuatan alam, terutama angin dan petir. Sebagai bagian dari pasukan pengintai, Voras seringkali menghabisi musuh sebelum mereka menyadari kehadirannya. Namun, kesetiaannya hanya pada kekacauan, dan ia memanfaatkan kekuatan alam untuk memerintah dengan tangan besi. Badai selalu mengikuti jejaknya.",
-    color: "#6A5ACD",
+    color: "rgba(106, 90, 205, 0.2)",
     //mulai asset image
     cardImg: "/assets/character-page-assets/character-assets/voras/card.png",
     cardImgHover:

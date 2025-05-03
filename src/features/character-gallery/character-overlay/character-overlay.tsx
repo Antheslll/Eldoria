@@ -8,6 +8,7 @@ import CharacterDescriptionSection from "./character-description-section";
 import { useCharacterData } from "../../../hooks/useCharacterData";
 import useWindowSize from "../../../hooks/useWindowSize";
 import CharacterInfoPanel from "./character-info-panel";
+import CharacterSkillSection from "./character-skill-section";
 
 interface CharacterOverlayPropsType {
   closeOverlay: () => void;
@@ -65,6 +66,7 @@ const CharacterOverlay = ({
     previewImage,
     showSkillDescription,
     skillIconPreviewing,
+    heroColor,
   } = useCharacterData(filteredHero, skillHover);
 
   if (isOverlayOpen) {
@@ -87,56 +89,125 @@ const CharacterOverlay = ({
       skillName: skillName3,
     },
   ];
-
-  return (
-    <div
-      className="w-full xl:h-[100vh] bg-black/90 fixed z-50 flex justify-center items-center"
-      onClick={() => {
-        closeOverlay();
-      }}
-    >
+  if (width > 1024 || (width > 640 && width < 768)) {
+    return (
       <div
-        className={`w-[90%] lg:h-[80vh] ${
-          !overlayAppear ? "opacity-0" : "opacity-100 fade-in-5ms"
-        } bg-cover bg-center`}
-        style={{
-          backgroundImage: `url(
-            ${heroBackground})`,
+        className="w-full lg:h-[100vh] sm:h-[100vh] bg-black/90 fixed z-50 flex justify-center items-center"
+        onClick={() => {
+          closeOverlay();
         }}
-        onClick={(e) => e.stopPropagation()}
       >
-        <div className="w-full lg:h-[80vh] bg-[8B0000]/50">
+        <div
+          className={`w-[90%] lg:h-[90vh] sm:h-[90vh] ${
+            !overlayAppear ? "opacity-0" : "opacity-100 fade-in-5ms"
+          } bg-cover bg-center`}
+          style={{
+            backgroundImage: `url(
+            ${heroBackground})`,
+          }}
+          onClick={(e) => e.stopPropagation()}
+        >
           <div
-            className={`w-full lg:h-[80vh] bg-black/70 grid grid-cols-[35%_30%_35%]`}
+            className="w-full lg:h-[90vh] sm:h-[90vh]"
+            style={{ backgroundColor: `${heroColor}` }}
           >
-            <CharacterDescriptionSection
-              heroName={heroName || ""}
-              heroSurname={heroSurname || ""}
-              description={description || ""}
-            />
-            <div className="flex justify-center items-center">
-              <img src={previewImage} className="lg:w-[70%]" />
+            <div
+              className={`w-full lg:h-[90vh] sm:h-[90vh] bg-black/70 grid grid-cols-[35%_30%_35%]`}
+            >
+              <CharacterDescriptionSection
+                heroName={heroName || ""}
+                heroSurname={heroSurname || ""}
+                description={description || ""}
+              />
+              <div className="flex justify-center items-center">
+                <img src={previewImage} className="lg:w-[70%] sm:w-[70%]" />
+              </div>
+              <CharacterInfoPanel
+                weaponImg={weaponImg || ""}
+                weaponName={weaponName || ""}
+                skillHover={skillHover}
+                hp={hp}
+                level={level}
+                power={power}
+                st={st}
+                def={def}
+                skillIconPreviewing={skillIconPreviewing || ""}
+                showSkillDescription={showSkillDescription || ""}
+                skillIconList={skillIconList}
+                handleSkillHover={handleSkillHover}
+                handleSkillLeave={handleSkillLeave}
+              />
             </div>
-            <CharacterInfoPanel
-              weaponImg={weaponImg || ""}
-              weaponName={weaponName || ""}
-              skillHover={skillHover}
-              hp={hp}
-              level={level}
-              power={power}
-              st={st}
-              def={def}
-              skillIconPreviewing={skillIconPreviewing || ""}
-              showSkillDescription={showSkillDescription || ""}
-              skillIconList={skillIconList}
-              handleSkillHover={handleSkillHover}
-              handleSkillLeave={handleSkillLeave}
-            />
           </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  } else if (width >= 768 || width > 0) {
+    return (
+      <div
+        className="w-full h-[100vh] fixed z-50 bg-black/90 flex justify-center items-center"
+        onClick={() => {
+          closeOverlay();
+        }}
+      >
+        <div
+          className={`w-[90%]  md:h-[90vh] h-[90vh] ${
+            !overlayAppear ? "opacity-0" : "opacity-100 fade-in-5ms"
+          } bg-cover bg-center`}
+          style={{
+            backgroundImage: `url(
+            ${heroBackground})`,
+          }}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <div
+            className="w-full md:h-[90vh] h-[90vh]"
+            style={{ backgroundColor: `${heroColor}` }}
+          >
+            <div
+              className={`w-full md:h-[90vh] h-[90vh] bg-black/70 grid md:grid-rows-[25%_55%_20%] grid-rows-[20%_60%_20%]`}
+            >
+              <div>
+                <CharacterDescriptionSection
+                  heroName={heroName || ""}
+                  heroSurname={heroSurname || ""}
+                  description={description || ""}
+                />
+              </div>
+              <div className="grid grid-cols-2">
+                <div className="flex justify-center items-center">
+                  <img src={previewImage} className="md:w-[70%] w-[90%]" />
+                </div>
+                <CharacterInfoPanel
+                  weaponImg={weaponImg || ""}
+                  weaponName={weaponName || ""}
+                  skillHover={skillHover}
+                  hp={hp}
+                  level={level}
+                  power={power}
+                  st={st}
+                  def={def}
+                  skillIconPreviewing={skillIconPreviewing || ""}
+                  showSkillDescription={showSkillDescription || ""}
+                  skillIconList={skillIconList}
+                  handleSkillHover={handleSkillHover}
+                  handleSkillLeave={handleSkillLeave}
+                />
+              </div>
+
+              <div>
+                <CharacterSkillSection
+                  skillIconList={skillIconList}
+                  handleSkillHover={handleSkillHover}
+                  handleSkillLeave={handleSkillLeave}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 };
 
 export default CharacterOverlay;

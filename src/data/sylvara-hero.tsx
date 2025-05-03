@@ -19,7 +19,7 @@ export const sylvaraHero = [
       "Rain of Arrows: Hujan anak panah menghujam area luas, melukai banyak musuh sekaligus.",
     description:
       "Aeren Lyrwind adalah pemanah jarak jauh legendaris dari hutan Sylvara, dibesarkan oleh kaum elf sejak bayi. Ia menguasai medan tinggi dan rimbunnya pepohonan untuk mengamati dan menyerang tanpa terlihat. Senjatanya, Windpiercer, adalah busur panjang yang diukir dari kayu pohon roh dan diselaraskan dengan angin hutan, menembakkan anak panah yang membelah udara dalam keheningan dan presisi sempurna. Ia bertugas menjaga Gerbang Dedaunan, batas antara dunia manusia dan roh.",
-    color: "#98FB98",
+    color: "rgba(152, 251, 152, 0.2)",
 
     //mulai asset image
     cardImg:
@@ -67,7 +67,7 @@ export const sylvaraHero = [
       "Nature’s Embrace: Energi alam menyembuhkan luka dan memperkuat pertahanan.",
     description:
       "Naera Elynthar adalah penyihir keturunan garis langsung dari druid pertama yang menjaga keseimbangan alam. Ia tumbuh di jantung Hutan Suci Sylvara, tempat di mana roh alam berbicara dalam bisikan angin dan akar. Tongkatnya, Elaran’s Bloom, tumbuh dari benih pohon roh kuno dan diperkuat oleh kristal alam, memancarkan cahaya hijau lembut yang mampu menyembuhkan atau menghancurkan. Ia dikenal sebagai penjaga keselarasan antara dunia manusia dan semesta.",
-    color: "#7CFC00",
+    color: "rgba(124, 252, 0, 0.2)",
     //mulai asset image
     cardImg:
       "/assets/character-page-assets/character-assets/naera-elynthar/card.png",
@@ -114,7 +114,7 @@ export const sylvaraHero = [
       "Guardian Roar: Auman penjaga alam mengguncang lawan dan meningkatkan semangat sekutu.",
     description:
       "Fayen Woodguard adalah ksatria pelindung wilayah barat Sylvara, ditempa oleh ritual akar besi yang mengikat kekuatan hutan ke dalam raganya. Ia mengenakan armor berat dari kayu roh yang telah membatu dan mengayunkan Oakrend, kombinasi pedang dan perisai yang dibuat dari batang pohon kuno yang telah menyatu dengan logam alam. Keteguhannya di medan tempur menjadi dinding pertahanan bagi rakyat desa yang hidup dalam bayang-bayang hutan.",
-    color: "#556B2F",
+    color: "rgba(85, 107, 47, 0.2)",
     //mulai asset image
     cardImg:
       "/assets/character-page-assets/character-assets/fayen-woodguard/card.png",
@@ -161,7 +161,7 @@ export const sylvaraHero = [
       "Poison Dagger Rain: Hujan belati beracun menyebar, melemahkan banyak musuh sekaligus.",
     description:
       "Verris Shadeleaf adalah pembunuh tersembunyi dari suku hutan terdalam Sylvara, dilatih dalam seni kamuflase dan serangan diam. Ia memanfaatkan racun alami dari tanaman liar dan gerakan cepat seperti bayangan. Senjatanya, Duskleaf Fangs, adalah dua belati beracun yang dipahat dari akar gelap dan disempurnakan dengan racun tanaman suci. Ia menyatu dengan alam, muncul dan menghilang sebelum lawan sempat menyadari kehadirannya.",
-    color: "#2E8B57",
+    color: "rgba(46, 139, 87, 0.2)",
     //mulai asset image
     cardImg:
       "/assets/character-page-assets/character-assets/verris-shadeleaf/card.png",
@@ -208,7 +208,7 @@ export const sylvaraHero = [
       "Thorn Barrage: Ledakan duri bertubi-tubi menyerang semua musuh di area.",
     description:
       "Orin Thornlance adalah prajurit berdarah campuran manusia dan dryad yang mewarisi kekuatan tumbuhan hidup. Ia bertarung dengan Sylvaris, tombak roh yang tumbuh dari akar pohon penjaga. Senjata ini hidup dan bereaksi terhadap bahaya, mengeluarkan duri dan akar yang membelit musuh. Orin dikenal sebagai tembok pertama pertahanan saat musuh menginjakkan kaki di perbatasan hutan.",
-    color: "#556B2F",
+    color: "rgba(85, 107, 47, 0.2)",
     //mulai asset image
     cardImg:
       "/assets/character-page-assets/character-assets/orin-thornlance/card.png",

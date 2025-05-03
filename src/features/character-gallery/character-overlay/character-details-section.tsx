@@ -32,7 +32,7 @@ const CharacterDetailsSection = ({
           def={def}
         />
       ) : (
-        <div className="bg-black/30 grid grid-rows-[90px_140px]">
+        <div className="bg-black/30 grid lg:grid-rows-[10vh_23vh] md:grid-rows-[5vh_15vh] sm:grid-rows-[15vh_20vh] grid-rows-[6vh_18vh]">
           <div className="grid grid-cols-[30%_70%]">
             <div className="flex justify-center items-center">
               <CharacterSectionRound>
@@ -43,14 +43,14 @@ const CharacterDetailsSection = ({
               </CharacterSectionRound>
             </div>
             <div className="flex items-center">
-              <h4 className="text-white text-[20px] fell-english">
+              <h4 className="text-white lg:text-[1.5vw] md:text-[2.5vw] sm:text-[2vw] text-[3vw] fell-english">
                 {skillHover}
               </h4>
             </div>
           </div>
           <div className="flex justify-center items-center">
-            <div className="w-[90%] h-[130px] bg-black/70 p-3">
-              <p className="text-white text-[12px] text-justify">
+            <div className="w-[90%] lg:h-[17vh] md:h-[12vh] sm:h-[20vh] h-[15vh] bg-black/70 p-3">
+              <p className="text-white lg:text-[0.8vw] md:text-[1.5vw] sm:text-[1vw] text-[2vw] text-justify">
                 {showSkillDescription}
               </p>
             </div>

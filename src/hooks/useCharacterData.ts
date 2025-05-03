@@ -25,6 +25,7 @@ interface FilteredHeroType {
   skill1Description?: string;
   skill2Description?: string;
   skill3Description?: string;
+  color?: string;
 }
 
 export function useCharacterData(
@@ -59,6 +60,7 @@ export function useCharacterData(
     skill1Description,
     skill2Description,
     skill3Description,
+    heroColor,
   } = useMemo(() => {
     return {
       heroBackground: filteredHero?.background,
@@ -88,6 +90,7 @@ export function useCharacterData(
       skill1Description: filteredHero?.skill1Description,
       skill2Description: filteredHero?.skill2Description,
       skill3Description: filteredHero?.skill3Description,
+      heroColor: filteredHero?.color,
     };
   }, [filteredHero]);
 
@@ -161,5 +164,6 @@ export function useCharacterData(
     previewImage,
     showSkillDescription,
     skillIconPreviewing,
+    heroColor,
   };
 }
