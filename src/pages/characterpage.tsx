@@ -54,7 +54,7 @@ scrollDistance > 550 && scrollDistance < 1392
         />
       )}
       <main
-        className={`w-full xl:h-[clamp(5000px,820vh,6500px)] xl:pt-[20vh] lg:h-[clamp(4800px,570vh,5300px)] sm:h-[clamp(5000px,1350vh,9000px)] lg:pt-[10vh] md:h-[clamp(5900px,470vh,6200px)] h-[clamp(4600px,530vh,5000px)] pt-[2vh] pb-5 duration-500 transition-all character-background`}
+        className={`w-full h-auto pt-[5vh] pb-[5vh] duration-500 transition-all character-background`}
       >
         <CharacterAlbum
           title="Guardian of The Light of Valdenar"

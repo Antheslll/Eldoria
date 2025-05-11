@@ -20,7 +20,7 @@ const HorizontalFooter = () => {
             Untuk pertanyaan, ajakan kolaborasi atau bisikan dari dunia luar...
           </h5>
 
-          <ul className="text-white list-none grid lg:grid-rows-[7vh_7vh_7vh] md:grid-rows-[3vh_3vh_3vh] lg:mt-[2vh] md:mt-[1vh] ">
+          <ul className="text-white list-none grid lg:grid-rows-[7vh_7vh_7vh] md:grid-rows-[3vh_3vh_3vh] md:gap-[clamp(7px,2vh,8px)] lg:mt-[2vh] md:mt-[1vh] ">
             <ContactList
               icon={<GmailIcon />}
               contactText="Email: relics@eldoria.realm"
