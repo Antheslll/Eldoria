@@ -89,7 +89,7 @@ const HeaderComponent = ({
         className="w-[100vw] xl:w-[100vw] xl:h-[100vh] sm:w-[100vw] lg:h-[100vh] md:w-[100vw] md:h-[clamp(700px,100vh,1500px)] sm:h-[clamp(600px,100vh,1000px)] h-[100vh] bg-cover bg-center"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        <div className="w-[100vw] lg:h-[100vh] md:h-[clamp(700px,100vh,1500px)] sm:h-[clamp(600px,100vh,800px)] h-[100vh] bg-black/50 flex justify-center pt-[90px]">
+        <div className="w-[100vw] lg:h-[100vh] md:h-[clamp(700px,100vh,1500px)] sm:h-[clamp(600px,100vh,800px)] h-[100vh] bg-red-500 md:bg-black/50 flex justify-center pt-[90px]">
           <div className="lg:w-[80vw] md:w-[80vw] h-auto grid  xl:grid-rows-[clamp(30px,10vh,150px)_clamp(70px,15vh,150px)_6vh_10vh_15vh_10vh_7vh] lg:grid-rows-[10vh_13vh_6vh_10vh_15vh_10vh_7vh] md:grid-rows-[clamp(130px,12vh,160px)_clamp(90px,9vh,120px)_clamp(50px,4vh,70px)_clamp(120px,12vh,150px)_clamp(150px,15vh,180px)_1vh_2vh] sm:grid-rows-[35vh_17vh_8vh_clamp(80px,20vh,200px)_clamp(100px,35vh,200px)_2vh_1vh] grid-rows-[13vh_5vh_4vh_8vh_13vh_2vh_1vh]">
             <div className="flex justify-center ">
               <img

@@ -23,7 +23,7 @@ const CharacterOverlay = ({
 }: CharacterOverlayPropsType) => {
   const [skillHover, setSkillHover] = useState("");
   const [overlayAppear, setOverlayAppear] = useState(false);
-  const { width } = useWindowSize();
+  const { width, height } = useWindowSize();
 
   const handleSkillHover = (skill: string) => {
     setSkillHover(skill);
@@ -205,6 +205,12 @@ const CharacterOverlay = ({
             </div>
           </div>
         </div>
+      </div>
+    );
+  } else if (height <= 600) {
+    return (
+      <div className="w-full h-full bg-black/90 flex justify-center items-center">
+        <h1>Rotate your device, please!</h1>
       </div>
     );
   }
