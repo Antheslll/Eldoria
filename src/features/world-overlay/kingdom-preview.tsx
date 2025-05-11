@@ -27,7 +27,7 @@ const KingdomPreview = ({
   };
   if (preview === "kingdom") {
     return (
-      <div className={`h-full bg-black/80`}>
+      <div className={`h-full bg-black `}>
         <div
           className="h-full bg-cover bg-center"
           style={{ backgroundImage: `url(${land})` }}
@@ -51,7 +51,7 @@ const KingdomPreview = ({
     );
   } else if (preview === "leader") {
     return (
-      <div className="bg-black/80 h-full grid grid-cols-[20%_60%_20%]">
+      <div className="bg-black h-full grid grid-cols-[20%_60%_20%]">
         <KingdomNavigationArea
           color={color}
           location={location}
