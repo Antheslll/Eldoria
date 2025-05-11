@@ -19,7 +19,7 @@ const StoryText = ({ slideText, prev, next, handleSlide }: StoryTextProps) => {
           </div>
         </div>
         <div className="pl-10 pr-10 pt-3">
-          <p className="text-white  font-eb-garamond lg:text-[clamp(12px,1.1vw,20px)] text-justify whitespace-pre-line">
+          <p className="text-white  font-eb-garamond lg:text-[clamp(12px,1.3vw,20px)] text-justify whitespace-pre-line">
             {slideText}
           </p>
         </div>
