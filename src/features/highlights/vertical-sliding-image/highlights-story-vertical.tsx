@@ -10,11 +10,15 @@ const VerticalStoryHighlights = ({
   handleClick,
 }: VerticalStoryHighlightsProps) => {
   const [descAppear, setDescAppear] = useState(false);
+  const [disabled, setDisabled] = useState(false);
 
   useEffect(() => {
     if (isClick === "Story") {
+      setDisabled(true);
+
       setTimeout(() => {
         setDescAppear(true);
+        setDisabled(false);
       }, 1000);
     } else {
       setDescAppear(false);
@@ -22,7 +26,7 @@ const VerticalStoryHighlights = ({
   }, [isClick]);
 
   return (
-    <div
+    <button
       className={`w-full ${
         isClick === ""
           ? "md:h-[clamp(150px,30vh,1200px)] sm:h-[clamp(50px,30vh,400px)] h-[clamp(100px,30vh,800px)] "
@@ -31,6 +35,7 @@ const VerticalStoryHighlights = ({
           : "md:h-[clamp(300px,60vh,1500px)] sm:h-[clamp(100px,60vh,800px)] h-[clamp(200px,60vh,1600px)]"
       } bg-yellow-300 bg-[url("/assets/home-page-assets/highlight-section-assets/story-highlights-image.png")] bg-cover bg-center transition-all duration-1000 ease-in-out`}
       onClick={() => handleClick("Story")}
+      disabled={disabled}
     >
       <div className="w-full h-full radial-gradient">
         <div className="w-full h-full flex flex-col justify-center items-center">
@@ -56,7 +61,7 @@ const VerticalStoryHighlights = ({
           </p>
         </div>
       </div>
-    </div>
+    </button>
   );
 };
 

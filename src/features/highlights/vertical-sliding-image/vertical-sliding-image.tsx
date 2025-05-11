@@ -16,7 +16,7 @@ const VerticalSlidingImage = () => {
 
   return (
     <main>
-      <div className="w-full h-[100vh] home-background flex justify-center items-center">
+      <div className="w-full h-[clamp(700px,100vh,900px)] home-background flex justify-center items-center">
         <div className="w-[90%] h-auto flex-col">
           <VerticalWorldHighlights
             isClick={isClick}
