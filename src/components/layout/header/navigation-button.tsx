@@ -84,7 +84,7 @@ const NavigationButton = ({
   }
   if (pages === "Arcane Chronicles") {
     return (
-      <Link to={anchor} target="_blank">
+      <a href={anchor} target="_blank">
         <button
           className={`${
             isHover ? "relative z-60 bg-white/20" : ""
@@ -100,7 +100,7 @@ const NavigationButton = ({
         >
           {pages}
         </button>
-      </Link>
+      </a>
     );
   } else {
     return (
