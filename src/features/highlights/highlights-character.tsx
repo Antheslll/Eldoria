@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 interface HighlightCharacterProps {
@@ -15,13 +15,15 @@ const HighlightCharacter = ({
 }: HighlightCharacterProps) => {
   const [textAppear, setTextAppear] = useState(false);
 
-  if (isHover === "character") {
-    setTimeout(() => {
-      setTextAppear(true);
-    }, 500);
-  } else if (isHover !== "character") {
-    setTextAppear(false);
-  }
+  useEffect(() => {
+    if (isHover === "character") {
+      setTimeout(() => {
+        setTextAppear(true);
+      }, 800);
+    } else if (isHover !== "character") {
+      setTextAppear(false);
+    }
+  }, [isHover]);
 
   return (
     <Link
@@ -85,8 +87,12 @@ const HighlightCharacter = ({
               </h4>
             )}
 
-            {isHover === "character" && textAppear && (
-              <p className="text-white text-center xl:text-[0.8vw] lg:text-[0.8vw]">
+            {isHover === "character" && (
+              <p
+                className={`${
+                  textAppear ? "opacity-100" : "opacity-0"
+                } transition-all duration-300 ease-in-out text-white text-center xl:text-[0.8vw] lg:text-[0.8vw]`}
+              >
                 Behind the burning eyes lies a story of scars, ambition, and
                 promises left unfulfilled. They are not just figures—they are
                 the echoes of blood that still beats within the shadows of

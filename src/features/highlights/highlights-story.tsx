@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 interface HighlightStoryProps {
@@ -16,13 +16,15 @@ const HighlightStory = ({
 }: HighlightStoryProps) => {
   const [textAppear, setTextAppear] = useState(false);
 
-  if (isHover === "story") {
-    setTimeout(() => {
-      setTextAppear(true);
-    }, 500);
-  } else if (isHover !== "story") {
-    setTextAppear(false);
-  }
+  useEffect(() => {
+    if (isHover === "story") {
+      setTimeout(() => {
+        setTextAppear(true);
+      }, 800);
+    } else if (isHover !== "story") {
+      setTextAppear(false);
+    }
+  }, [isHover]);
 
   return (
     <Link
@@ -82,8 +84,12 @@ const HighlightStory = ({
               </h4>
             )}
 
-            {isHover === "story" && textAppear && (
-              <p className="text-white text-center xl:text-[0.8vw] lg:text-[0.8vw]">
+            {isHover === "story" && (
+              <p
+                className={`${
+                  textAppear ? "opacity-100" : "opacity-0"
+                } transition-all duration-300 ease-in-out text-white text-center xl:text-[0.8vw] lg:text-[0.8vw]`}
+              >
                 The holy sword, forged from shattered stars, waits for the soul
                 worthy to wield it. Within the Celestial Void, its story echoes,
                 awaiting a fate that will shatter eternity. Those who dare seek

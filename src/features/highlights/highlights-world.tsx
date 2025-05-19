@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 interface HighlightWorldProps {
@@ -14,13 +14,15 @@ const HighlightWorld = ({
 }: HighlightWorldProps) => {
   const [textAppear, setTextAppear] = useState(false);
 
-  if (isHover === "world") {
-    setTimeout(() => {
-      setTextAppear(true);
-    }, 500);
-  } else if (isHover !== "world") {
-    setTextAppear(false);
-  }
+  useEffect(() => {
+    if (isHover === "world") {
+      setTimeout(() => {
+        setTextAppear(true);
+      }, 800);
+    } else if (isHover !== "world") {
+      setTextAppear(false);
+    }
+  }, [isHover]);
 
   return (
     <Link
@@ -76,8 +78,12 @@ const HighlightWorld = ({
               </h4>
             )}
 
-            {isHover === "world" && textAppear && (
-              <p className="text-white text-center xl:text-[0.8vw] lg:text-[0.8vw]">
+            {isHover === "world" && (
+              <p
+                className={`${
+                  textAppear ? "opacity-100" : "opacity-0"
+                } transition-all duration-300 ease-in-out text-white text-center xl:text-[0.8vw] lg:text-[0.8vw]`}
+              >
                 Between the starry skies and the land cracked by war, Eldoria
                 stands as a world where legends are born, and destiny is shaped
                 by courage and ancient magic. In this land, every shadow hides a
