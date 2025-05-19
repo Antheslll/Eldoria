@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 interface HighlightCharacterProps {
@@ -12,6 +13,16 @@ const HighlightCharacter = ({
   hoverGrab,
   handleGrab,
 }: HighlightCharacterProps) => {
+  const [textAppear, setTextAppear] = useState(false);
+
+  if (isHover === "character") {
+    setTimeout(() => {
+      setTextAppear(true);
+    }, 500);
+  } else if (isHover !== "character") {
+    setTextAppear(false);
+  }
+
   return (
     <Link
       to="characterpage"
@@ -74,7 +85,7 @@ const HighlightCharacter = ({
               </h4>
             )}
 
-            {isHover === "character" && (
+            {isHover === "character" && textAppear && (
               <p className="text-white text-center xl:text-[0.8vw] lg:text-[0.8vw]">
                 Behind the burning eyes lies a story of scars, ambition, and
                 promises left unfulfilled. They are not just figures—they are

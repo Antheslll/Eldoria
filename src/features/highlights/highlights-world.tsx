@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 interface HighlightWorldProps {
@@ -11,6 +12,16 @@ const HighlightWorld = ({
   setIsHover,
   hoverGrab,
 }: HighlightWorldProps) => {
+  const [textAppear, setTextAppear] = useState(false);
+
+  if (isHover === "world") {
+    setTimeout(() => {
+      setTextAppear(true);
+    }, 500);
+  } else if (isHover !== "world") {
+    setTextAppear(false);
+  }
+
   return (
     <Link
       to="/worldpage"
@@ -65,7 +76,7 @@ const HighlightWorld = ({
               </h4>
             )}
 
-            {isHover === "world" && (
+            {isHover === "world" && textAppear && (
               <p className="text-white text-center xl:text-[0.8vw] lg:text-[0.8vw]">
                 Between the starry skies and the land cracked by war, Eldoria
                 stands as a world where legends are born, and destiny is shaped

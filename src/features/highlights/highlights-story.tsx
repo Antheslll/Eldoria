@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 interface HighlightStoryProps {
@@ -13,6 +14,16 @@ const HighlightStory = ({
   hoverGrab,
   handleGrab,
 }: HighlightStoryProps) => {
+  const [textAppear, setTextAppear] = useState(false);
+
+  if (isHover === "story") {
+    setTimeout(() => {
+      setTextAppear(true);
+    }, 500);
+  } else if (isHover !== "story") {
+    setTextAppear(false);
+  }
+
   return (
     <Link
       to="/storypage"
@@ -71,7 +82,7 @@ const HighlightStory = ({
               </h4>
             )}
 
-            {isHover === "story" && (
+            {isHover === "story" && textAppear && (
               <p className="text-white text-center xl:text-[0.8vw] lg:text-[0.8vw]">
                 The holy sword, forged from shattered stars, waits for the soul
                 worthy to wield it. Within the Celestial Void, its story echoes,
