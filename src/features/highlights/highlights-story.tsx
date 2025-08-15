@@ -59,7 +59,7 @@ const HighlightStory = ({
             isHover === "story" ? "highlights-text-background" : ""
           } w-full xl:h-[clamp(500px,80vh,800px)] lg:h-[clamp(500px,70vh,800px)]  pt-3 flex justify-center items-end`}
         >
-          <div className="w-[70%] xl:h-[clamp(130px,15vh,300px)] lg:h-[clamp(130px,15vh,300px)] ml-[-15.5%]">
+          <div className="w-[70%] xl:h-[clamp(130px,15vh,300px)] lg:h-[clamp(130px,15vh,300px)] ml-[-15.5%] mb-3">
             {(isHover === "story" || isHover === "") && (
               <h4
                 className={` text-white xl:text-[3vw] lg:text-[2.5vw] font-pirata text-center ${
